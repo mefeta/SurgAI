@@ -1,0 +1,501 @@
+operation_type,surgical_specialty,patient_age_range,patient_gender,medical_risk_category,asa_score,procedure_complexity,estimated_surgical_steps,emergency_status,anesthesia_type,surgeon_experience_level,assistant_count,previous_similar_duration,equipment_preparation_time,cleaning_turnover_time,preop_preparation_duration,actual_duration
+Spinal Fusion,Neurosurgery,56-70,Male,Low,4,Low,11,Planned,General,Junior,0,194,22,27,13,175
+Minor Oral Surgery,Oral Surgery,36-55,Female,Medium,2,High,6,Planned,Regional,Expert,4,38,9,24,6,52
+Minor Oral Surgery,Oral Surgery,56-70,Female,Medium,2,Low,11,Planned,Regional,Junior,0,41,6,16,12,45
+Root Canal Surgery,Endodontics,56-70,Male,High,3,Low,9,Emergency,Sedation,Expert,0,80,13,30,14,72
+Minor Oral Surgery,Oral Surgery,56-70,Male,Low,4,Low,4,Planned,Local,Senior,0,48,21,17,17,41
+Jaw Cyst Removal,Oral Surgery,0-18,Male,Medium,1,Medium,3,Planned,Local,Senior,4,92,21,17,6,75
+Jaw Cyst Removal,Oral Surgery,19-35,Female,Low,1,Medium,8,Planned,Regional,Senior,3,93,8,11,5,72
+Root Canal Surgery,Endodontics,36-55,Female,Medium,3,High,11,Planned,General,Senior,3,68,5,10,14,97
+Tooth Extraction,Oral Surgery,0-18,Female,Medium,2,Low,11,Planned,Local,Intermediate,1,30,22,18,8,29
+Dental Implant Surgery,Oral Surgery,70+,Female,Low,3,High,3,Planned,Local,Senior,1,64,8,22,17,77
+Minor Oral Surgery,Oral Surgery,36-55,Male,Low,3,Medium,12,Planned,Regional,Junior,4,42,24,13,14,49
+Jaw Cyst Removal,Oral Surgery,0-18,Male,High,1,Medium,6,Planned,Local,Senior,3,82,23,21,10,81
+Periodontal Surgery,Periodontics,70+,Male,Low,4,Low,3,Emergency,Regional,Junior,1,103,12,21,18,109
+Cataract Surgery,Ophthalmology,70+,Male,Low,2,Medium,12,Planned,Regional,Junior,0,53,19,11,6,48
+ACL Reconstruction,Orthopedics,70+,Female,Medium,4,Medium,3,Emergency,Sedation,Junior,2,102,14,29,11,160
+Root Canal Surgery,Endodontics,19-35,Female,Medium,1,Medium,11,Planned,General,Intermediate,3,64,13,17,11,76
+Wisdom Tooth Removal,Oral Surgery,19-35,Male,Low,3,High,10,Planned,Local,Intermediate,3,41,11,16,6,49
+Minor Oral Surgery,Oral Surgery,19-35,Male,Medium,1,High,6,Emergency,General,Intermediate,4,53,10,12,9,64
+Hip Replacement,Orthopedics,70+,Male,Low,3,Medium,8,Emergency,Regional,Expert,2,125,7,30,12,143
+Laparoscopic Cholecystectomy,General Surgery,56-70,Female,Low,3,High,10,Planned,General,Expert,4,102,9,17,13,88
+Wisdom Tooth Removal,Oral Surgery,19-35,Female,High,4,High,10,Planned,General,Senior,3,33,14,23,17,53
+Cataract Surgery,Ophthalmology,36-55,Male,Medium,4,Medium,6,Emergency,Local,Intermediate,2,40,19,18,9,61
+Laparoscopic Cholecystectomy,General Surgery,56-70,Female,Medium,3,Medium,12,Planned,Sedation,Expert,1,90,24,24,12,86
+Minor Oral Surgery,Oral Surgery,70+,Male,High,1,Low,7,Planned,Sedation,Expert,1,40,15,21,17,35
+Gum Graft Surgery,Periodontics,19-35,Female,Medium,1,Medium,4,Planned,Sedation,Senior,2,64,19,27,13,70
+Hip Replacement,Orthopedics,56-70,Female,Medium,2,Low,5,Planned,General,Senior,1,141,16,26,18,127
+Spinal Fusion,Neurosurgery,70+,Male,High,3,Low,11,Emergency,Sedation,Intermediate,4,194,15,17,13,248
+Periodontal Surgery,Periodontics,19-35,Male,High,1,Low,4,Emergency,Local,Senior,3,72,24,15,9,94
+Tonsillectomy,ENT,70+,Male,Medium,4,High,8,Planned,Sedation,Intermediate,1,32,10,15,17,43
+Jaw Cyst Removal,Oral Surgery,56-70,Male,High,4,Low,6,Planned,Local,Intermediate,1,92,25,26,19,103
+Cataract Surgery,Ophthalmology,36-55,Male,Medium,1,Medium,3,Emergency,Regional,Intermediate,0,49,22,22,6,59
+Spinal Fusion,Neurosurgery,0-18,Male,High,4,High,10,Emergency,Regional,Junior,1,176,7,13,20,401
+Laparoscopic Cholecystectomy,General Surgery,36-55,Male,Medium,1,Low,11,Planned,Regional,Senior,0,86,23,20,8,71
+Dental Implant Surgery,Oral Surgery,56-70,Male,Low,2,High,7,Planned,Local,Senior,0,56,21,16,7,66
+Periodontal Surgery,Periodontics,36-55,Male,Medium,4,Low,5,Emergency,General,Junior,2,97,8,20,14,129
+Tonsillectomy,ENT,70+,Female,Medium,3,High,7,Planned,Regional,Expert,4,30,21,13,10,33
+Hip Replacement,Orthopedics,36-55,Female,High,2,Low,11,Planned,General,Intermediate,1,162,7,11,13,147
+Wisdom Tooth Removal,Oral Surgery,0-18,Female,Medium,1,Low,5,Emergency,General,Expert,3,40,14,25,10,28
+Root Canal Surgery,Endodontics,70+,Male,Medium,4,Medium,7,Emergency,Sedation,Junior,1,65,23,20,15,112
+Dental Implant Surgery,Oral Surgery,19-35,Female,High,1,Low,5,Emergency,General,Senior,4,70,10,26,12,65
+Tooth Extraction,Oral Surgery,36-55,Male,High,4,Low,12,Planned,Sedation,Intermediate,1,33,17,16,16,32
+Periodontal Surgery,Periodontics,36-55,Male,Medium,3,Low,3,Emergency,General,Senior,1,89,6,21,19,100
+Hip Replacement,Orthopedics,19-35,Female,High,3,Low,3,Planned,Regional,Senior,3,176,8,16,15,148
+Periodontal Surgery,Periodontics,19-35,Female,Medium,2,Medium,8,Emergency,Local,Intermediate,1,106,23,30,9,114
+Wisdom Tooth Removal,Oral Surgery,70+,Female,Low,4,Low,5,Emergency,Sedation,Expert,2,36,8,26,10,30
+ACL Reconstruction,Orthopedics,70+,Female,High,2,Medium,5,Emergency,Regional,Intermediate,2,118,9,24,20,175
+Hip Replacement,Orthopedics,19-35,Female,High,4,Low,11,Planned,Local,Senior,0,174,21,16,15,152
+Tooth Extraction,Oral Surgery,0-18,Female,High,1,Low,11,Planned,Regional,Intermediate,0,33,24,29,17,29
+ACL Reconstruction,Orthopedics,70+,Male,Medium,1,Low,5,Emergency,General,Expert,3,101,22,23,14,90
+Gum Graft Surgery,Periodontics,56-70,Male,Low,1,Low,9,Emergency,Sedation,Intermediate,3,72,11,17,12,69
+Minor Oral Surgery,Oral Surgery,19-35,Male,Low,2,High,7,Planned,Regional,Intermediate,4,41,8,25,13,51
+Spinal Fusion,Neurosurgery,0-18,Female,Low,3,Medium,5,Emergency,Sedation,Senior,2,168,14,19,8,196
+Periodontal Surgery,Periodontics,70+,Female,High,1,Medium,12,Planned,Regional,Senior,0,100,14,23,7,108
+Cataract Surgery,Ophthalmology,19-35,Female,High,4,Low,3,Planned,Regional,Intermediate,0,47,6,21,6,52
+Tonsillectomy,ENT,36-55,Female,High,4,Low,4,Planned,General,Expert,1,24,12,17,9,29
+Spinal Fusion,Neurosurgery,70+,Female,Low,1,Low,12,Planned,Sedation,Senior,0,213,5,20,12,128
+Total Knee Replacement,Orthopedics,19-35,Male,Low,1,Low,10,Planned,Local,Intermediate,1,108,10,25,20,91
+Periodontal Surgery,Periodontics,70+,Female,Low,3,Low,4,Planned,Regional,Junior,1,95,20,18,8,89
+Spinal Fusion,Neurosurgery,36-55,Female,Low,2,High,8,Emergency,General,Junior,1,190,15,25,11,286
+Periodontal Surgery,Periodontics,19-35,Female,Low,4,High,9,Planned,Regional,Junior,1,88,25,11,18,138
+Tonsillectomy,ENT,56-70,Female,Medium,3,Medium,5,Planned,General,Expert,1,26,15,16,16,26
+Cataract Surgery,Ophthalmology,56-70,Female,High,2,Medium,7,Emergency,Regional,Expert,2,44,8,10,16,54
+Jaw Cyst Removal,Oral Surgery,70+,Female,Medium,3,Low,10,Emergency,General,Intermediate,0,78,12,22,15,83
+ACL Reconstruction,Orthopedics,56-70,Male,Low,4,Medium,10,Planned,General,Senior,3,125,18,20,15,106
+Tooth Extraction,Oral Surgery,36-55,Male,High,4,Low,4,Planned,General,Expert,4,24,20,28,17,30
+Jaw Cyst Removal,Oral Surgery,56-70,Female,High,2,Low,6,Emergency,General,Intermediate,4,94,23,15,9,107
+Spinal Fusion,Neurosurgery,70+,Female,Low,3,Medium,11,Emergency,Local,Expert,0,152,5,26,7,169
+Wisdom Tooth Removal,Oral Surgery,19-35,Female,Medium,2,Low,9,Emergency,Sedation,Expert,1,38,22,11,13,30
+ACL Reconstruction,Orthopedics,0-18,Female,Medium,1,Medium,7,Planned,Local,Expert,3,124,14,17,10,97
+ACL Reconstruction,Orthopedics,36-55,Male,Medium,4,Low,9,Planned,Regional,Junior,3,114,7,19,19,142
+Dental Implant Surgery,Oral Surgery,56-70,Female,High,4,Medium,7,Emergency,Sedation,Expert,0,57,7,25,20,76
+Tooth Extraction,Oral Surgery,0-18,Male,Low,1,Low,5,Planned,Sedation,Expert,0,29,15,17,6,21
+Hip Replacement,Orthopedics,0-18,Male,Medium,2,High,10,Planned,Regional,Junior,2,140,25,21,17,221
+Spinal Fusion,Neurosurgery,56-70,Male,High,1,High,6,Planned,Regional,Expert,4,185,19,23,7,239
+Gum Graft Surgery,Periodontics,70+,Male,Medium,4,Low,4,Emergency,Sedation,Intermediate,4,59,10,27,13,79
+Gum Graft Surgery,Periodontics,0-18,Female,Medium,3,Low,8,Emergency,Regional,Intermediate,4,80,7,25,15,80
+Laparoscopic Cholecystectomy,General Surgery,36-55,Male,Low,2,High,5,Emergency,Local,Senior,4,75,16,12,18,119
+Spinal Fusion,Neurosurgery,56-70,Male,Low,2,High,10,Planned,Local,Junior,4,208,5,21,5,232
+Periodontal Surgery,Periodontics,70+,Female,High,2,High,12,Emergency,Sedation,Senior,2,82,24,21,20,149
+Tonsillectomy,ENT,19-35,Female,Low,2,Medium,4,Emergency,Local,Expert,0,32,9,24,10,27
+Hip Replacement,Orthopedics,36-55,Male,Low,4,Low,10,Emergency,Regional,Expert,4,125,5,23,14,141
+Laparoscopic Cholecystectomy,General Surgery,0-18,Male,High,2,High,3,Planned,Regional,Junior,3,95,14,17,5,156
+Tonsillectomy,ENT,70+,Male,High,3,Medium,8,Planned,Local,Expert,1,24,24,23,7,35
+Hip Replacement,Orthopedics,19-35,Female,Medium,4,High,5,Emergency,Local,Senior,2,152,12,25,5,215
+Gum Graft Surgery,Periodontics,36-55,Female,Medium,4,Medium,3,Planned,Sedation,Intermediate,4,77,23,16,7,81
+Minor Oral Surgery,Oral Surgery,19-35,Female,Medium,2,Medium,9,Planned,Local,Junior,0,48,10,20,5,57
+Total Knee Replacement,Orthopedics,19-35,Female,Medium,3,High,12,Planned,Regional,Expert,0,141,5,28,18,138
+Tooth Extraction,Oral Surgery,0-18,Male,Low,3,High,8,Planned,Local,Intermediate,4,31,24,14,11,41
+Spinal Fusion,Neurosurgery,70+,Male,High,2,High,11,Planned,Regional,Senior,3,160,5,17,16,275
+Minor Oral Surgery,Oral Surgery,19-35,Female,Low,2,Medium,12,Planned,General,Intermediate,0,36,10,26,17,47
+Tonsillectomy,ENT,70+,Female,Low,3,High,3,Emergency,Sedation,Senior,4,24,10,25,19,40
+Total Knee Replacement,Orthopedics,36-55,Female,Medium,2,Medium,6,Emergency,Sedation,Intermediate,1,99,16,14,14,149
+Wisdom Tooth Removal,Oral Surgery,0-18,Female,High,2,Low,5,Emergency,Regional,Expert,3,31,12,29,11,36
+Root Canal Surgery,Endodontics,36-55,Female,Low,4,Medium,6,Planned,Regional,Junior,2,67,22,14,15,84
+Cataract Surgery,Ophthalmology,56-70,Female,High,4,Medium,5,Planned,Local,Junior,0,43,13,13,17,70
+Laparoscopic Cholecystectomy,General Surgery,0-18,Male,Low,3,Low,11,Emergency,Sedation,Junior,3,104,21,17,20,114
+ACL Reconstruction,Orthopedics,0-18,Male,High,1,Medium,4,Planned,Sedation,Senior,1,127,18,12,19,129
+Wisdom Tooth Removal,Oral Surgery,56-70,Female,High,4,High,11,Planned,General,Senior,1,39,14,23,16,57
+ACL Reconstruction,Orthopedics,36-55,Female,High,3,Low,6,Planned,Sedation,Senior,0,97,14,28,20,101
+Periodontal Surgery,Periodontics,36-55,Female,High,1,High,8,Planned,Regional,Intermediate,3,81,18,17,8,131
+Minor Oral Surgery,Oral Surgery,70+,Female,High,2,Low,12,Planned,Local,Junior,3,36,21,26,7,50
+Spinal Fusion,Neurosurgery,19-35,Female,Low,1,High,9,Planned,Sedation,Intermediate,1,193,16,18,16,196
+Total Knee Replacement,Orthopedics,0-18,Female,Low,2,High,10,Planned,Regional,Junior,4,131,16,22,13,165
+Cataract Surgery,Ophthalmology,70+,Female,High,3,Low,8,Planned,Local,Senior,0,44,15,29,7,48
+Jaw Cyst Removal,Oral Surgery,19-35,Female,Medium,4,Low,8,Planned,General,Junior,3,89,10,14,5,86
+Root Canal Surgery,Endodontics,19-35,Male,Medium,2,High,12,Emergency,General,Intermediate,4,68,10,22,6,131
+Hip Replacement,Orthopedics,36-55,Male,Medium,3,Low,8,Emergency,General,Intermediate,2,162,7,13,12,185
+Cataract Surgery,Ophthalmology,56-70,Male,High,4,Medium,8,Planned,Regional,Junior,2,49,16,13,6,76
+Root Canal Surgery,Endodontics,0-18,Male,Low,2,Medium,11,Emergency,Local,Senior,3,87,15,16,15,84
+Jaw Cyst Removal,Oral Surgery,0-18,Male,Low,2,Medium,11,Planned,Sedation,Junior,3,94,23,23,14,90
+Laparoscopic Cholecystectomy,General Surgery,70+,Female,Medium,3,Medium,10,Emergency,Local,Junior,2,83,18,16,11,133
+Spinal Fusion,Neurosurgery,0-18,Male,Medium,1,Low,6,Emergency,Local,Senior,2,163,9,14,14,158
+Hip Replacement,Orthopedics,56-70,Female,High,1,Low,12,Planned,Regional,Expert,2,161,13,28,18,137
+Cataract Surgery,Ophthalmology,19-35,Female,High,2,Medium,10,Planned,Regional,Expert,4,47,16,10,5,47
+ACL Reconstruction,Orthopedics,70+,Female,High,2,Low,10,Emergency,General,Junior,4,102,14,24,16,145
+Cataract Surgery,Ophthalmology,0-18,Female,Low,1,High,5,Planned,Regional,Senior,0,46,15,30,18,47
+Dental Implant Surgery,Oral Surgery,0-18,Male,Medium,3,High,8,Emergency,Local,Senior,3,63,6,28,14,83
+Laparoscopic Cholecystectomy,General Surgery,70+,Female,Medium,4,Medium,10,Emergency,Sedation,Senior,4,90,9,27,8,112
+Laparoscopic Cholecystectomy,General Surgery,70+,Female,High,1,High,8,Planned,Local,Expert,0,89,9,25,10,102
+Wisdom Tooth Removal,Oral Surgery,36-55,Female,Low,4,High,4,Emergency,Sedation,Intermediate,3,37,19,12,15,54
+ACL Reconstruction,Orthopedics,70+,Female,High,1,High,9,Planned,Sedation,Expert,0,109,13,15,19,125
+Jaw Cyst Removal,Oral Surgery,36-55,Male,Medium,4,Low,4,Emergency,Sedation,Junior,1,78,5,11,14,99
+Root Canal Surgery,Endodontics,0-18,Female,Medium,3,Medium,7,Planned,Regional,Intermediate,4,89,5,20,16,90
+Root Canal Surgery,Endodontics,36-55,Female,Medium,4,Medium,9,Planned,Regional,Intermediate,2,84,9,11,16,93
+Jaw Cyst Removal,Oral Surgery,19-35,Male,High,4,Low,7,Emergency,Sedation,Junior,4,67,21,11,19,122
+Total Knee Replacement,Orthopedics,36-55,Female,Medium,3,High,4,Planned,Sedation,Senior,2,118,23,30,11,147
+Total Knee Replacement,Orthopedics,0-18,Female,High,1,Medium,11,Planned,Sedation,Senior,0,107,22,16,5,130
+Wisdom Tooth Removal,Oral Surgery,19-35,Female,High,4,Low,11,Emergency,Regional,Intermediate,3,36,15,17,13,51
+Dental Implant Surgery,Oral Surgery,36-55,Male,Low,4,High,9,Planned,General,Junior,0,57,24,11,10,99
+ACL Reconstruction,Orthopedics,19-35,Female,High,3,Medium,10,Emergency,Local,Junior,4,99,22,27,19,207
+Minor Oral Surgery,Oral Surgery,0-18,Female,High,1,Low,7,Planned,Regional,Junior,2,49,14,23,17,57
+Minor Oral Surgery,Oral Surgery,70+,Female,Low,1,Medium,3,Planned,Regional,Intermediate,1,53,9,19,12,43
+Tonsillectomy,ENT,0-18,Female,Low,3,Low,11,Planned,Regional,Junior,3,33,24,19,5,32
+Minor Oral Surgery,Oral Surgery,70+,Male,Medium,2,High,5,Planned,Sedation,Junior,3,41,12,17,9,72
+Minor Oral Surgery,Oral Surgery,36-55,Female,Low,3,Medium,5,Planned,Regional,Junior,1,39,12,16,10,51
+Minor Oral Surgery,Oral Surgery,19-35,Female,Medium,1,High,12,Emergency,General,Expert,0,38,19,30,14,55
+Dental Implant Surgery,Oral Surgery,36-55,Male,Medium,4,Low,5,Planned,General,Senior,2,52,8,30,13,61
+Periodontal Surgery,Periodontics,70+,Male,Low,2,Low,9,Emergency,General,Senior,4,80,11,25,12,80
+Hip Replacement,Orthopedics,70+,Male,Low,2,Low,9,Emergency,Local,Senior,0,171,6,16,6,143
+Tonsillectomy,ENT,19-35,Male,Medium,4,Low,4,Planned,Regional,Expert,0,24,19,24,6,25
+Periodontal Surgery,Periodontics,36-55,Female,Medium,4,Low,5,Planned,Regional,Junior,2,73,22,18,6,111
+Gum Graft Surgery,Periodontics,0-18,Female,High,3,Low,8,Planned,General,Intermediate,1,68,6,29,19,85
+Wisdom Tooth Removal,Oral Surgery,19-35,Male,High,4,Medium,4,Emergency,Regional,Intermediate,2,38,20,13,7,51
+Wisdom Tooth Removal,Oral Surgery,19-35,Female,Low,1,High,11,Emergency,Sedation,Junior,2,38,24,14,20,55
+Wisdom Tooth Removal,Oral Surgery,0-18,Male,Low,1,High,3,Emergency,Local,Intermediate,2,37,10,22,9,47
+Spinal Fusion,Neurosurgery,70+,Female,Medium,4,Low,9,Emergency,Regional,Intermediate,2,165,21,21,8,215
+Gum Graft Surgery,Periodontics,56-70,Male,High,4,Low,10,Planned,Regional,Expert,1,64,10,24,11,61
+Laparoscopic Cholecystectomy,General Surgery,0-18,Female,Medium,1,Medium,9,Planned,Sedation,Junior,0,88,16,17,5,106
+Spinal Fusion,Neurosurgery,0-18,Male,High,2,Medium,8,Planned,Sedation,Intermediate,4,202,14,10,10,222
+ACL Reconstruction,Orthopedics,56-70,Female,High,1,Medium,4,Planned,Sedation,Senior,0,97,7,11,11,118
+Total Knee Replacement,Orthopedics,56-70,Female,Medium,2,Medium,5,Planned,Regional,Expert,0,116,21,13,11,100
+Tooth Extraction,Oral Surgery,36-55,Male,Medium,4,Low,10,Emergency,Sedation,Junior,0,28,21,13,5,44
+Cataract Surgery,Ophthalmology,19-35,Female,Low,1,Low,7,Planned,Regional,Senior,2,39,25,14,6,35
+Cataract Surgery,Ophthalmology,19-35,Male,Medium,2,Low,12,Emergency,Local,Intermediate,4,41,24,27,8,46
+Cataract Surgery,Ophthalmology,36-55,Female,Low,2,High,11,Emergency,Sedation,Senior,1,45,7,26,12,60
+Gum Graft Surgery,Periodontics,36-55,Female,Medium,4,Low,6,Emergency,Sedation,Junior,3,64,10,10,19,101
+Wisdom Tooth Removal,Oral Surgery,70+,Female,Medium,3,High,4,Emergency,Local,Expert,1,33,10,16,18,46
+ACL Reconstruction,Orthopedics,36-55,Male,High,2,High,10,Planned,Sedation,Intermediate,2,116,6,18,9,158
+Laparoscopic Cholecystectomy,General Surgery,19-35,Female,Medium,1,High,10,Emergency,General,Expert,1,96,14,27,14,99
+ACL Reconstruction,Orthopedics,36-55,Female,Medium,4,Low,3,Emergency,Local,Senior,1,104,25,12,19,124
+ACL Reconstruction,Orthopedics,56-70,Female,High,2,Medium,8,Planned,Sedation,Expert,2,124,13,22,13,124
+Hip Replacement,Orthopedics,70+,Male,Medium,3,Low,5,Planned,Sedation,Expert,4,154,9,11,8,129
+Wisdom Tooth Removal,Oral Surgery,19-35,Male,High,3,Medium,3,Emergency,Local,Junior,2,35,23,22,20,55
+Total Knee Replacement,Orthopedics,36-55,Female,Low,2,Low,6,Emergency,Regional,Junior,2,106,9,20,18,133
+Wisdom Tooth Removal,Oral Surgery,70+,Male,High,1,Medium,5,Emergency,Regional,Senior,1,38,22,20,20,45
+Cataract Surgery,Ophthalmology,56-70,Female,High,4,Low,8,Planned,General,Senior,3,39,9,29,13,53
+Root Canal Surgery,Endodontics,36-55,Male,Low,3,Medium,7,Planned,General,Expert,4,63,12,26,6,62
+Wisdom Tooth Removal,Oral Surgery,70+,Female,High,2,Medium,6,Planned,Local,Senior,1,34,22,14,11,41
+Laparoscopic Cholecystectomy,General Surgery,56-70,Female,High,2,High,11,Planned,Regional,Intermediate,0,102,11,27,6,150
+Spinal Fusion,Neurosurgery,36-55,Male,High,3,High,6,Emergency,Local,Junior,4,194,8,20,20,368
+Hip Replacement,Orthopedics,56-70,Female,Low,2,Low,7,Planned,Sedation,Senior,1,139,8,30,8,116
+Jaw Cyst Removal,Oral Surgery,70+,Male,Low,2,Medium,10,Planned,Local,Senior,1,84,7,29,16,65
+Spinal Fusion,Neurosurgery,70+,Female,Medium,2,Low,11,Planned,Sedation,Intermediate,2,145,8,25,6,171
+Wisdom Tooth Removal,Oral Surgery,19-35,Female,Medium,1,Low,8,Planned,General,Junior,4,28,6,11,7,37
+Tooth Extraction,Oral Surgery,56-70,Male,High,4,Medium,8,Emergency,Local,Intermediate,3,33,18,17,14,48
+Hip Replacement,Orthopedics,19-35,Male,High,4,Low,5,Planned,Sedation,Intermediate,1,167,14,13,9,192
+Jaw Cyst Removal,Oral Surgery,70+,Male,Low,3,High,10,Emergency,Sedation,Senior,2,75,11,25,9,110
+Root Canal Surgery,Endodontics,0-18,Female,High,2,Medium,6,Planned,Local,Junior,1,68,15,17,13,110
+Minor Oral Surgery,Oral Surgery,36-55,Male,Medium,4,Low,11,Emergency,Regional,Intermediate,2,42,20,13,13,55
+Jaw Cyst Removal,Oral Surgery,56-70,Male,Medium,1,Low,3,Planned,General,Senior,0,82,25,14,16,62
+Gum Graft Surgery,Periodontics,0-18,Male,Low,2,Medium,10,Planned,General,Intermediate,3,82,10,13,9,70
+Wisdom Tooth Removal,Oral Surgery,56-70,Male,Low,1,Low,3,Planned,General,Intermediate,2,37,23,23,12,26
+Tooth Extraction,Oral Surgery,56-70,Female,High,4,Medium,6,Emergency,Regional,Junior,1,35,10,19,7,50
+Jaw Cyst Removal,Oral Surgery,19-35,Female,High,4,Low,11,Emergency,Regional,Intermediate,3,83,15,23,17,113
+Cataract Surgery,Ophthalmology,70+,Female,Medium,2,Medium,7,Emergency,Sedation,Intermediate,2,52,8,24,17,59
+Total Knee Replacement,Orthopedics,56-70,Female,Low,2,Medium,8,Emergency,Sedation,Expert,3,97,8,26,19,104
+Hip Replacement,Orthopedics,36-55,Male,High,1,High,9,Emergency,Local,Senior,4,166,17,19,19,245
+Root Canal Surgery,Endodontics,70+,Female,High,3,High,4,Planned,General,Senior,4,66,15,18,7,120
+Tonsillectomy,ENT,70+,Female,Low,4,High,9,Emergency,Regional,Junior,1,28,15,14,8,58
+Spinal Fusion,Neurosurgery,0-18,Female,High,4,Medium,6,Emergency,Sedation,Senior,0,149,16,26,12,286
+Hip Replacement,Orthopedics,56-70,Male,Low,3,Low,7,Planned,Sedation,Expert,4,121,14,24,5,103
+ACL Reconstruction,Orthopedics,19-35,Female,Medium,3,Medium,6,Emergency,Regional,Intermediate,2,99,7,19,5,160
+Hip Replacement,Orthopedics,36-55,Female,Low,2,Medium,3,Emergency,General,Junior,3,173,10,13,11,198
+Hip Replacement,Orthopedics,56-70,Male,High,1,Low,7,Emergency,Regional,Junior,1,122,21,29,8,221
+ACL Reconstruction,Orthopedics,36-55,Female,Low,2,Low,4,Emergency,Sedation,Expert,4,94,9,15,5,82
+Periodontal Surgery,Periodontics,0-18,Female,Medium,1,Low,4,Planned,Sedation,Junior,4,73,21,17,13,86
+Jaw Cyst Removal,Oral Surgery,56-70,Male,Medium,2,Low,7,Emergency,Regional,Senior,3,81,18,28,5,85
+Hip Replacement,Orthopedics,0-18,Female,Low,1,Medium,4,Planned,Regional,Junior,2,141,23,26,15,172
+Spinal Fusion,Neurosurgery,70+,Male,High,2,Medium,6,Planned,Sedation,Junior,2,182,21,21,17,238
+Tonsillectomy,ENT,56-70,Female,Low,3,Low,12,Planned,Sedation,Expert,0,24,9,16,8,21
+Periodontal Surgery,Periodontics,56-70,Male,Low,4,High,5,Emergency,Regional,Intermediate,0,85,23,13,18,153
+Root Canal Surgery,Endodontics,19-35,Female,Low,1,Low,8,Planned,Sedation,Intermediate,3,86,20,19,17,62
+Tonsillectomy,ENT,56-70,Male,High,4,Medium,8,Planned,Local,Senior,3,29,19,26,17,36
+Wisdom Tooth Removal,Oral Surgery,56-70,Male,Low,3,High,7,Emergency,Local,Intermediate,4,38,23,14,10,51
+Hip Replacement,Orthopedics,56-70,Male,Low,4,Medium,10,Emergency,General,Junior,0,174,15,19,16,219
+Wisdom Tooth Removal,Oral Surgery,56-70,Male,Low,2,High,12,Emergency,Sedation,Expert,2,39,12,28,14,38
+Wisdom Tooth Removal,Oral Surgery,56-70,Female,Medium,4,High,10,Planned,Regional,Junior,2,31,9,11,6,56
+Dental Implant Surgery,Oral Surgery,0-18,Male,Low,3,Medium,5,Planned,General,Expert,0,61,7,18,20,47
+Gum Graft Surgery,Periodontics,19-35,Male,Medium,2,High,3,Emergency,Sedation,Expert,0,65,13,12,5,90
+Root Canal Surgery,Endodontics,36-55,Female,High,4,Low,10,Emergency,General,Senior,0,85,25,25,15,89
+Spinal Fusion,Neurosurgery,36-55,Female,High,4,Medium,3,Planned,Regional,Senior,0,203,18,17,20,206
+Minor Oral Surgery,Oral Surgery,36-55,Female,Low,3,High,7,Planned,Regional,Intermediate,3,50,16,19,6,58
+Wisdom Tooth Removal,Oral Surgery,36-55,Male,Low,1,High,5,Emergency,Regional,Junior,4,40,7,27,11,50
+Jaw Cyst Removal,Oral Surgery,19-35,Female,High,3,High,10,Emergency,Local,Expert,2,83,22,30,7,129
+Total Knee Replacement,Orthopedics,19-35,Male,Low,2,Low,8,Emergency,Local,Senior,4,136,19,10,6,107
+Root Canal Surgery,Endodontics,19-35,Male,Low,3,Medium,3,Emergency,Local,Senior,3,89,7,28,18,88
+Jaw Cyst Removal,Oral Surgery,19-35,Male,Medium,2,Medium,9,Emergency,Regional,Expert,1,85,23,12,12,82
+Cataract Surgery,Ophthalmology,0-18,Male,Medium,1,High,11,Emergency,Regional,Senior,1,44,23,12,8,60
+Hip Replacement,Orthopedics,36-55,Male,High,3,Low,5,Emergency,Sedation,Senior,2,143,11,28,12,184
+Dental Implant Surgery,Oral Surgery,0-18,Male,High,4,High,6,Planned,Regional,Expert,4,63,15,28,15,92
+Gum Graft Surgery,Periodontics,19-35,Female,Low,1,Medium,12,Emergency,Sedation,Expert,3,67,17,30,5,64
+Root Canal Surgery,Endodontics,70+,Female,Low,1,Medium,10,Emergency,General,Intermediate,3,60,10,28,5,87
+Gum Graft Surgery,Periodontics,36-55,Male,Low,2,Low,5,Emergency,Sedation,Senior,0,74,13,10,20,58
+Root Canal Surgery,Endodontics,0-18,Female,High,1,Medium,12,Planned,Regional,Expert,4,84,13,26,10,66
+Gum Graft Surgery,Periodontics,56-70,Female,Low,1,Medium,8,Emergency,Local,Senior,1,70,13,11,18,67
+Gum Graft Surgery,Periodontics,0-18,Male,Low,4,High,9,Planned,Local,Intermediate,3,78,12,18,12,92
+Laparoscopic Cholecystectomy,General Surgery,56-70,Male,High,2,High,9,Emergency,Sedation,Intermediate,1,75,22,17,20,163
+Tooth Extraction,Oral Surgery,0-18,Male,Low,1,Medium,6,Emergency,General,Senior,1,32,21,25,12,29
+Spinal Fusion,Neurosurgery,70+,Female,Low,1,High,4,Emergency,Local,Intermediate,3,204,21,15,5,224
+Jaw Cyst Removal,Oral Surgery,0-18,Male,High,4,Low,9,Planned,Regional,Expert,1,68,22,24,13,70
+Jaw Cyst Removal,Oral Surgery,56-70,Female,High,3,Low,12,Planned,Local,Senior,2,87,17,26,17,74
+Jaw Cyst Removal,Oral Surgery,70+,Female,Medium,4,Medium,4,Emergency,Local,Senior,0,87,24,30,11,92
+Laparoscopic Cholecystectomy,General Surgery,70+,Male,Medium,4,Medium,3,Emergency,Regional,Intermediate,3,100,13,11,8,132
+Spinal Fusion,Neurosurgery,70+,Female,Medium,1,Medium,5,Emergency,Sedation,Intermediate,3,151,16,29,11,239
+Hip Replacement,Orthopedics,0-18,Female,High,2,Low,11,Emergency,Local,Intermediate,4,167,15,22,15,171
+Laparoscopic Cholecystectomy,General Surgery,19-35,Female,Low,4,High,3,Emergency,Local,Expert,3,98,22,13,12,104
+Spinal Fusion,Neurosurgery,70+,Female,Medium,4,Medium,10,Emergency,Sedation,Senior,2,181,19,18,16,211
+Tonsillectomy,ENT,0-18,Female,Low,4,Low,4,Emergency,Sedation,Intermediate,1,29,25,19,12,32
+Spinal Fusion,Neurosurgery,0-18,Female,Low,4,High,4,Emergency,Local,Intermediate,1,175,10,21,14,268
+Dental Implant Surgery,Oral Surgery,56-70,Female,Medium,2,High,4,Planned,Local,Intermediate,0,65,5,12,14,85
+Periodontal Surgery,Periodontics,19-35,Male,Medium,2,Low,9,Planned,Sedation,Expert,4,78,17,30,9,73
+Hip Replacement,Orthopedics,0-18,Female,High,1,High,4,Emergency,Local,Senior,2,162,17,15,8,233
+Total Knee Replacement,Orthopedics,70+,Male,High,4,Medium,11,Planned,Sedation,Intermediate,3,125,14,21,14,150
+Periodontal Surgery,Periodontics,0-18,Male,High,3,Low,10,Emergency,General,Senior,4,75,20,14,12,99
+Laparoscopic Cholecystectomy,General Surgery,36-55,Male,Low,3,High,11,Emergency,General,Junior,4,96,13,20,6,166
+Tooth Extraction,Oral Surgery,0-18,Male,High,4,High,11,Emergency,General,Senior,4,34,11,16,17,56
+Total Knee Replacement,Orthopedics,19-35,Male,High,2,Medium,7,Planned,General,Expert,0,127,19,27,15,117
+ACL Reconstruction,Orthopedics,19-35,Female,Low,2,Medium,11,Planned,Regional,Intermediate,4,98,19,28,6,101
+Total Knee Replacement,Orthopedics,0-18,Female,Medium,4,Low,11,Planned,Local,Senior,0,104,20,21,14,114
+Total Knee Replacement,Orthopedics,56-70,Female,High,1,Low,11,Emergency,Local,Expert,4,132,10,15,9,111
+Gum Graft Surgery,Periodontics,70+,Male,Medium,3,Low,11,Emergency,Local,Intermediate,4,81,20,16,18,80
+ACL Reconstruction,Orthopedics,36-55,Female,Medium,2,High,3,Planned,General,Junior,3,88,20,18,10,171
+Spinal Fusion,Neurosurgery,0-18,Female,Medium,3,High,4,Planned,Regional,Senior,3,160,5,30,8,228
+Dental Implant Surgery,Oral Surgery,56-70,Female,Medium,1,Low,4,Emergency,Local,Expert,3,63,10,20,11,45
+Periodontal Surgery,Periodontics,70+,Female,Medium,3,Low,11,Emergency,General,Junior,2,81,22,12,14,124
+Tonsillectomy,ENT,0-18,Male,Low,2,Low,8,Planned,Regional,Junior,3,25,17,13,7,29
+Gum Graft Surgery,Periodontics,36-55,Female,High,4,Medium,8,Planned,General,Junior,0,82,13,19,19,101
+Total Knee Replacement,Orthopedics,19-35,Female,High,3,Medium,3,Emergency,Local,Intermediate,3,105,12,30,19,196
+Cataract Surgery,Ophthalmology,56-70,Male,Medium,4,Low,4,Planned,Regional,Expert,3,52,13,26,11,40
+Laparoscopic Cholecystectomy,General Surgery,19-35,Female,High,2,High,8,Planned,Sedation,Senior,4,88,18,17,10,138
+Tooth Extraction,Oral Surgery,19-35,Male,Low,4,Medium,9,Emergency,Local,Intermediate,2,27,14,30,9,36
+Total Knee Replacement,Orthopedics,70+,Male,Medium,2,High,11,Emergency,Regional,Intermediate,4,116,10,16,20,193
+Dental Implant Surgery,Oral Surgery,70+,Female,Low,4,Low,5,Emergency,Local,Senior,0,56,17,13,7,54
+Total Knee Replacement,Orthopedics,70+,Male,Medium,2,Low,10,Emergency,Sedation,Senior,1,117,9,10,13,108
+Hip Replacement,Orthopedics,19-35,Male,Low,2,High,6,Emergency,Sedation,Intermediate,0,143,25,28,14,235
+Total Knee Replacement,Orthopedics,70+,Female,Medium,3,Low,7,Emergency,Regional,Expert,2,116,12,19,9,106
+Root Canal Surgery,Endodontics,0-18,Female,Medium,2,High,7,Emergency,Sedation,Expert,2,63,15,14,13,90
+Periodontal Surgery,Periodontics,36-55,Female,Medium,1,Medium,9,Planned,Regional,Senior,0,72,24,17,7,84
+Periodontal Surgery,Periodontics,36-55,Male,Low,3,Low,10,Emergency,Sedation,Expert,0,95,7,15,18,77
+Root Canal Surgery,Endodontics,0-18,Male,High,2,Low,12,Emergency,Regional,Expert,0,67,23,21,8,82
+Tonsillectomy,ENT,0-18,Female,Medium,1,Medium,12,Emergency,General,Expert,1,30,11,12,8,28
+Minor Oral Surgery,Oral Surgery,56-70,Male,High,3,Low,5,Planned,General,Junior,2,50,23,19,5,56
+ACL Reconstruction,Orthopedics,0-18,Male,High,4,High,10,Emergency,Local,Junior,1,102,14,11,11,245
+Wisdom Tooth Removal,Oral Surgery,0-18,Male,High,2,High,9,Emergency,General,Senior,3,37,11,14,12,53
+Total Knee Replacement,Orthopedics,19-35,Female,Low,1,Medium,4,Planned,Regional,Expert,3,114,8,20,10,100
+Wisdom Tooth Removal,Oral Surgery,0-18,Male,Low,3,Low,4,Planned,Local,Intermediate,2,29,24,13,11,30
+Jaw Cyst Removal,Oral Surgery,70+,Male,High,2,Medium,11,Emergency,Local,Senior,1,90,10,20,15,95
+Tooth Extraction,Oral Surgery,0-18,Male,High,3,High,6,Planned,Regional,Senior,1,34,24,27,8,43
+Tooth Extraction,Oral Surgery,70+,Male,Low,1,High,8,Emergency,Sedation,Senior,2,29,13,11,5,40
+Cataract Surgery,Ophthalmology,70+,Female,High,4,Low,11,Planned,General,Junior,1,50,16,20,16,59
+Jaw Cyst Removal,Oral Surgery,56-70,Male,Medium,4,High,5,Planned,Sedation,Expert,1,78,8,16,6,106
+Hip Replacement,Orthopedics,70+,Male,High,2,Medium,4,Emergency,Sedation,Expert,2,139,17,11,18,190
+Root Canal Surgery,Endodontics,70+,Male,Medium,3,High,7,Planned,Local,Intermediate,0,63,15,29,17,107
+Hip Replacement,Orthopedics,36-55,Female,High,4,Medium,7,Planned,General,Senior,3,176,20,24,20,207
+Hip Replacement,Orthopedics,70+,Male,Medium,2,High,4,Emergency,Sedation,Junior,0,128,17,12,18,286
+Tonsillectomy,ENT,70+,Male,Low,4,Low,12,Emergency,Regional,Senior,0,30,21,29,7,28
+Spinal Fusion,Neurosurgery,70+,Female,Low,1,Medium,5,Emergency,General,Senior,3,169,24,27,11,192
+Jaw Cyst Removal,Oral Surgery,70+,Female,Medium,2,High,8,Planned,Local,Expert,0,72,13,13,5,81
+Minor Oral Surgery,Oral Surgery,0-18,Male,Low,4,High,6,Planned,General,Junior,1,43,12,30,18,74
+Minor Oral Surgery,Oral Surgery,56-70,Female,Low,3,Medium,3,Emergency,Local,Junior,2,46,12,23,11,61
+Minor Oral Surgery,Oral Surgery,0-18,Female,Low,4,Low,6,Planned,Regional,Intermediate,4,39,5,11,18,41
+Spinal Fusion,Neurosurgery,70+,Male,Low,2,Medium,5,Emergency,Sedation,Expert,1,192,7,21,6,165
+Spinal Fusion,Neurosurgery,36-55,Female,Medium,3,Low,5,Planned,Sedation,Junior,0,186,18,25,8,210
+Root Canal Surgery,Endodontics,0-18,Female,Medium,4,Medium,11,Emergency,General,Junior,3,70,25,21,18,113
+Cataract Surgery,Ophthalmology,0-18,Female,High,2,High,9,Planned,General,Junior,0,51,11,10,17,84
+Laparoscopic Cholecystectomy,General Surgery,70+,Male,Low,3,Medium,9,Planned,Local,Intermediate,4,75,12,13,13,88
+Tonsillectomy,ENT,56-70,Female,Low,1,Medium,12,Planned,Local,Senior,2,34,24,14,12,27
+Laparoscopic Cholecystectomy,General Surgery,70+,Male,Medium,1,Medium,7,Emergency,Sedation,Expert,3,98,14,12,13,82
+Wisdom Tooth Removal,Oral Surgery,36-55,Female,Low,1,Low,12,Emergency,Local,Junior,2,32,20,21,8,39
+ACL Reconstruction,Orthopedics,56-70,Female,Medium,3,Low,9,Planned,General,Junior,4,115,8,24,19,117
+Dental Implant Surgery,Oral Surgery,19-35,Female,Medium,2,Medium,12,Emergency,General,Intermediate,2,54,14,22,19,71
+Dental Implant Surgery,Oral Surgery,19-35,Male,High,4,High,8,Planned,General,Senior,4,57,24,16,6,98
+Tonsillectomy,ENT,19-35,Male,Medium,2,High,5,Planned,Sedation,Junior,4,29,18,24,14,48
+Tooth Extraction,Oral Surgery,36-55,Female,High,3,High,10,Emergency,General,Intermediate,4,29,15,16,6,58
+Total Knee Replacement,Orthopedics,0-18,Female,High,3,Low,12,Planned,Sedation,Expert,4,134,5,28,19,106
+ACL Reconstruction,Orthopedics,36-55,Male,High,1,High,9,Planned,Regional,Junior,0,114,17,22,18,172
+Wisdom Tooth Removal,Oral Surgery,70+,Female,Medium,4,High,7,Planned,Local,Senior,4,29,19,30,19,44
+Periodontal Surgery,Periodontics,56-70,Male,Medium,4,High,12,Emergency,General,Senior,2,82,8,15,18,143
+Spinal Fusion,Neurosurgery,36-55,Female,Low,3,High,3,Planned,Sedation,Senior,2,187,7,25,16,214
+Dental Implant Surgery,Oral Surgery,19-35,Male,Low,3,High,9,Emergency,General,Junior,0,69,23,10,7,108
+Spinal Fusion,Neurosurgery,36-55,Male,Low,2,Low,12,Emergency,Local,Expert,4,166,12,25,5,137
+Gum Graft Surgery,Periodontics,19-35,Male,Medium,1,High,9,Emergency,Regional,Junior,3,59,8,21,10,119
+Dental Implant Surgery,Oral Surgery,36-55,Female,Medium,3,High,5,Emergency,Regional,Expert,3,56,11,28,14,76
+Root Canal Surgery,Endodontics,70+,Male,Low,2,High,8,Planned,Regional,Junior,3,70,24,10,11,112
+Minor Oral Surgery,Oral Surgery,70+,Male,High,2,High,8,Planned,Local,Intermediate,0,44,24,17,8,73
+Jaw Cyst Removal,Oral Surgery,70+,Female,High,4,High,8,Planned,Regional,Senior,2,66,24,19,11,125
+Tooth Extraction,Oral Surgery,0-18,Male,Medium,3,Low,3,Emergency,Regional,Intermediate,2,29,20,11,9,32
+Cataract Surgery,Ophthalmology,0-18,Female,Medium,1,High,9,Planned,Local,Expert,0,50,25,20,10,50
+Wisdom Tooth Removal,Oral Surgery,56-70,Male,Medium,2,Medium,3,Emergency,General,Junior,3,40,7,26,19,54
+Tooth Extraction,Oral Surgery,0-18,Female,Low,3,Low,4,Emergency,Regional,Expert,0,26,17,10,18,26
+Hip Replacement,Orthopedics,0-18,Male,High,2,High,8,Emergency,General,Intermediate,2,170,19,27,5,281
+Dental Implant Surgery,Oral Surgery,19-35,Male,High,2,High,8,Emergency,Sedation,Junior,3,63,18,30,8,134
+Tooth Extraction,Oral Surgery,70+,Male,High,1,Medium,9,Emergency,General,Junior,1,35,16,22,18,51
+Periodontal Surgery,Periodontics,0-18,Male,Low,1,Medium,7,Planned,General,Senior,1,80,12,24,19,75
+Tonsillectomy,ENT,56-70,Female,Medium,1,Medium,3,Planned,General,Intermediate,4,29,15,26,5,31
+Cataract Surgery,Ophthalmology,56-70,Male,Medium,3,Medium,4,Emergency,Regional,Expert,3,36,6,20,10,49
+Cataract Surgery,Ophthalmology,36-55,Female,Low,2,Medium,3,Emergency,Regional,Senior,2,37,6,20,20,50
+Cataract Surgery,Ophthalmology,70+,Female,High,3,Low,8,Planned,Regional,Expert,1,37,5,16,9,38
+Tooth Extraction,Oral Surgery,36-55,Male,High,2,Medium,6,Planned,Local,Intermediate,0,33,9,21,8,36
+Hip Replacement,Orthopedics,19-35,Female,High,2,Low,8,Planned,General,Junior,1,137,6,29,10,194
+Hip Replacement,Orthopedics,0-18,Male,Medium,1,Medium,7,Emergency,Regional,Junior,1,144,22,16,17,209
+ACL Reconstruction,Orthopedics,36-55,Female,Low,4,High,9,Planned,General,Senior,2,92,14,20,14,138
+Cataract Surgery,Ophthalmology,36-55,Female,Low,3,Medium,10,Planned,General,Expert,2,39,25,18,6,36
+Gum Graft Surgery,Periodontics,19-35,Male,High,2,Low,10,Emergency,Sedation,Intermediate,3,80,13,17,18,80
+ACL Reconstruction,Orthopedics,36-55,Female,Medium,2,High,6,Emergency,Regional,Expert,0,109,8,10,15,144
+Spinal Fusion,Neurosurgery,19-35,Male,Medium,2,Medium,8,Emergency,Regional,Intermediate,0,164,13,13,5,243
+ACL Reconstruction,Orthopedics,70+,Female,Medium,4,Medium,10,Emergency,Regional,Junior,0,112,10,20,10,184
+Gum Graft Surgery,Periodontics,70+,Female,Medium,2,Low,6,Planned,Regional,Intermediate,2,59,9,21,13,68
+Total Knee Replacement,Orthopedics,0-18,Female,Low,1,High,3,Planned,General,Junior,3,122,24,23,6,173
+Laparoscopic Cholecystectomy,General Surgery,70+,Male,Medium,4,High,9,Emergency,Regional,Senior,4,94,19,14,11,138
+ACL Reconstruction,Orthopedics,56-70,Male,High,1,High,6,Emergency,Sedation,Intermediate,4,108,22,16,15,192
+Hip Replacement,Orthopedics,0-18,Male,Low,3,Low,12,Emergency,General,Junior,2,131,22,13,16,181
+Root Canal Surgery,Endodontics,70+,Male,High,4,Medium,3,Planned,Local,Expert,4,72,23,11,12,92
+Jaw Cyst Removal,Oral Surgery,19-35,Male,Low,1,Medium,7,Emergency,Local,Expert,1,81,12,12,16,77
+Dental Implant Surgery,Oral Surgery,70+,Male,Medium,4,Low,11,Planned,General,Expert,3,54,8,12,17,49
+Hip Replacement,Orthopedics,70+,Male,Medium,2,High,4,Emergency,Sedation,Junior,2,172,23,17,15,261
+Root Canal Surgery,Endodontics,56-70,Male,High,4,Low,3,Planned,Regional,Expert,1,67,23,16,9,77
+Periodontal Surgery,Periodontics,19-35,Female,Medium,3,Low,12,Planned,Local,Expert,1,75,8,24,7,68
+Laparoscopic Cholecystectomy,General Surgery,70+,Male,Low,2,Medium,5,Planned,General,Senior,0,92,17,30,5,73
+Cataract Surgery,Ophthalmology,36-55,Male,High,3,Medium,8,Planned,Regional,Intermediate,1,39,10,18,20,59
+Laparoscopic Cholecystectomy,General Surgery,70+,Female,Low,2,Low,8,Emergency,General,Junior,3,81,18,19,9,102
+Wisdom Tooth Removal,Oral Surgery,36-55,Female,Medium,1,Medium,12,Emergency,Regional,Junior,1,28,15,19,19,51
+Dental Implant Surgery,Oral Surgery,56-70,Male,Low,2,Medium,12,Planned,Regional,Expert,2,54,22,25,18,50
+Laparoscopic Cholecystectomy,General Surgery,70+,Male,Medium,4,Medium,10,Planned,Sedation,Junior,1,100,6,11,10,127
+Tonsillectomy,ENT,19-35,Male,High,3,High,7,Emergency,Sedation,Senior,1,29,12,19,15,57
+Cataract Surgery,Ophthalmology,36-55,Female,High,3,Low,12,Planned,General,Junior,1,43,20,11,14,55
+Periodontal Surgery,Periodontics,70+,Female,Medium,3,High,6,Planned,Regional,Intermediate,4,78,14,27,14,126
+Spinal Fusion,Neurosurgery,0-18,Female,High,2,Low,3,Planned,Local,Expert,0,205,12,29,13,154
+Hip Replacement,Orthopedics,36-55,Female,Low,3,High,7,Planned,Local,Intermediate,3,133,25,16,6,210
+Tonsillectomy,ENT,0-18,Male,High,4,Medium,11,Emergency,Sedation,Senior,3,34,25,21,15,46
+Cataract Surgery,Ophthalmology,0-18,Female,Medium,4,Medium,4,Planned,General,Expert,0,38,13,17,10,42
+Minor Oral Surgery,Oral Surgery,0-18,Female,Low,4,Medium,9,Emergency,Local,Senior,4,53,17,23,8,53
+Hip Replacement,Orthopedics,0-18,Female,Medium,1,Medium,8,Emergency,General,Expert,2,143,9,19,7,141
+Laparoscopic Cholecystectomy,General Surgery,56-70,Female,Low,3,Low,3,Emergency,General,Junior,1,80,8,29,15,114
+Gum Graft Surgery,Periodontics,0-18,Male,High,2,Low,7,Emergency,General,Junior,3,67,16,13,8,98
+Jaw Cyst Removal,Oral Surgery,19-35,Male,Low,3,Medium,8,Emergency,Sedation,Expert,0,93,5,29,17,80
+Periodontal Surgery,Periodontics,19-35,Female,High,2,Medium,3,Emergency,General,Expert,0,80,21,17,13,104
+ACL Reconstruction,Orthopedics,56-70,Female,Medium,2,Medium,5,Planned,Sedation,Junior,2,94,6,15,6,149
+Cataract Surgery,Ophthalmology,19-35,Male,Low,2,High,4,Planned,General,Intermediate,1,42,21,13,20,56
+Tooth Extraction,Oral Surgery,56-70,Female,Low,2,Low,8,Emergency,Regional,Intermediate,0,24,23,27,12,28
+Hip Replacement,Orthopedics,0-18,Female,High,1,Low,4,Planned,Regional,Senior,3,129,11,16,17,148
+Periodontal Surgery,Periodontics,36-55,Male,Low,2,Medium,3,Planned,General,Senior,2,75,9,19,13,86
+Root Canal Surgery,Endodontics,19-35,Male,Low,4,Low,3,Emergency,Sedation,Junior,1,89,10,18,20,100
+Jaw Cyst Removal,Oral Surgery,36-55,Female,High,3,Medium,5,Emergency,Regional,Intermediate,1,76,17,15,14,122
+Jaw Cyst Removal,Oral Surgery,19-35,Female,High,3,Low,3,Emergency,Local,Intermediate,1,94,24,30,16,101
+Total Knee Replacement,Orthopedics,36-55,Male,Medium,2,Low,5,Emergency,General,Senior,2,132,10,14,12,117
+Gum Graft Surgery,Periodontics,19-35,Female,Medium,4,High,5,Emergency,General,Junior,0,82,23,21,10,134
+Wisdom Tooth Removal,Oral Surgery,0-18,Female,High,3,Medium,9,Emergency,Sedation,Junior,3,35,9,24,17,67
+Dental Implant Surgery,Oral Surgery,56-70,Female,Medium,3,Low,5,Emergency,Regional,Expert,3,68,19,30,15,57
+Laparoscopic Cholecystectomy,General Surgery,36-55,Male,Low,3,High,7,Planned,General,Intermediate,0,101,11,29,17,128
+Periodontal Surgery,Periodontics,36-55,Male,High,3,Low,5,Planned,General,Junior,2,91,8,19,16,123
+Gum Graft Surgery,Periodontics,70+,Female,High,3,Low,9,Planned,Regional,Expert,0,83,12,15,18,67
+Gum Graft Surgery,Periodontics,19-35,Male,High,4,Low,10,Emergency,Regional,Expert,4,82,9,10,10,71
+Spinal Fusion,Neurosurgery,56-70,Female,Low,4,Low,12,Planned,Local,Senior,0,209,10,16,5,149
+Minor Oral Surgery,Oral Surgery,56-70,Female,Medium,3,Low,5,Planned,Local,Intermediate,2,36,9,21,5,48
+Tonsillectomy,ENT,36-55,Male,Low,2,Low,11,Planned,Sedation,Junior,2,26,9,30,16,29
+Tonsillectomy,ENT,36-55,Male,Low,3,Low,9,Planned,Local,Expert,4,31,19,24,6,22
+Spinal Fusion,Neurosurgery,19-35,Female,Low,3,High,8,Planned,General,Junior,0,178,20,26,9,274
+Hip Replacement,Orthopedics,56-70,Male,Low,2,Low,6,Emergency,Regional,Expert,1,166,22,17,16,123
+Periodontal Surgery,Periodontics,36-55,Female,High,3,Low,5,Emergency,Regional,Intermediate,4,101,17,10,12,127
+Spinal Fusion,Neurosurgery,19-35,Female,Low,4,Medium,8,Planned,Local,Senior,4,204,16,26,11,171
+Cataract Surgery,Ophthalmology,70+,Female,High,3,Medium,4,Planned,Regional,Senior,3,37,25,27,17,50
+Tooth Extraction,Oral Surgery,36-55,Male,Medium,3,Medium,5,Planned,Sedation,Intermediate,2,31,19,16,18,32
+Jaw Cyst Removal,Oral Surgery,36-55,Male,Low,1,Low,10,Emergency,Local,Junior,2,92,12,28,12,84
+Root Canal Surgery,Endodontics,19-35,Female,High,2,Low,11,Planned,General,Senior,4,72,14,27,7,79
+Tonsillectomy,ENT,70+,Female,High,3,High,7,Emergency,Local,Senior,3,31,22,19,8,52
+Minor Oral Surgery,Oral Surgery,56-70,Male,Medium,4,Medium,11,Planned,Local,Senior,2,39,20,30,17,46
+Spinal Fusion,Neurosurgery,36-55,Female,Medium,4,Medium,6,Emergency,Local,Expert,1,205,17,12,18,190
+Total Knee Replacement,Orthopedics,70+,Female,Low,3,Medium,12,Planned,Local,Intermediate,3,104,12,22,5,122
+Minor Oral Surgery,Oral Surgery,70+,Male,High,1,Low,5,Emergency,Local,Intermediate,1,51,22,29,18,52
+Cataract Surgery,Ophthalmology,36-55,Male,Low,3,Medium,7,Emergency,General,Senior,1,37,15,17,10,50
+Wisdom Tooth Removal,Oral Surgery,0-18,Female,Low,1,Low,12,Emergency,Regional,Junior,3,33,13,25,13,36
+Wisdom Tooth Removal,Oral Surgery,36-55,Female,Medium,3,High,9,Emergency,Sedation,Junior,4,41,8,16,20,63
+Gum Graft Surgery,Periodontics,19-35,Female,Low,1,High,11,Planned,Regional,Senior,4,76,7,15,15,69
+ACL Reconstruction,Orthopedics,56-70,Male,Medium,4,High,7,Emergency,General,Expert,4,104,18,15,7,139
+Total Knee Replacement,Orthopedics,56-70,Male,Medium,1,Low,11,Emergency,Local,Expert,2,100,6,16,17,105
+Minor Oral Surgery,Oral Surgery,56-70,Male,Low,3,Medium,4,Emergency,Sedation,Senior,1,42,22,17,8,53
+Periodontal Surgery,Periodontics,56-70,Male,Medium,4,Medium,5,Emergency,Local,Intermediate,0,102,15,26,7,123
+Spinal Fusion,Neurosurgery,70+,Female,Medium,1,Medium,5,Emergency,Regional,Junior,0,194,22,13,17,255
+Jaw Cyst Removal,Oral Surgery,70+,Male,Low,3,Low,11,Planned,General,Intermediate,2,85,10,30,16,67
+Jaw Cyst Removal,Oral Surgery,36-55,Male,Medium,2,Medium,12,Planned,Regional,Senior,4,74,12,11,16,80
+Tonsillectomy,ENT,56-70,Male,Medium,2,High,12,Emergency,General,Senior,3,30,18,17,8,40
+ACL Reconstruction,Orthopedics,19-35,Female,Medium,3,High,11,Emergency,Sedation,Intermediate,4,128,17,11,20,194
+ACL Reconstruction,Orthopedics,0-18,Male,High,1,Medium,8,Emergency,Sedation,Expert,0,124,18,11,19,116
+Dental Implant Surgery,Oral Surgery,70+,Female,Medium,4,High,11,Planned,General,Intermediate,0,61,6,28,16,90
+Gum Graft Surgery,Periodontics,56-70,Male,High,1,High,7,Emergency,Local,Expert,1,76,5,12,20,105
+Tonsillectomy,ENT,36-55,Female,Low,2,Low,10,Emergency,Sedation,Expert,3,29,8,22,19,23
+Gum Graft Surgery,Periodontics,19-35,Male,Low,2,High,11,Planned,General,Expert,2,60,25,24,12,70
+Spinal Fusion,Neurosurgery,36-55,Male,Medium,1,High,5,Emergency,Local,Senior,3,204,9,16,6,235
+Dental Implant Surgery,Oral Surgery,36-55,Female,High,4,High,10,Emergency,Regional,Senior,0,49,14,28,16,119
+Hip Replacement,Orthopedics,0-18,Female,Medium,2,Low,4,Emergency,General,Intermediate,2,125,19,11,15,161
+Cataract Surgery,Ophthalmology,36-55,Female,High,2,Low,12,Planned,Regional,Intermediate,2,53,5,19,12,48
+Wisdom Tooth Removal,Oral Surgery,19-35,Male,Low,3,High,9,Emergency,Local,Intermediate,2,41,11,15,11,52
+Cataract Surgery,Ophthalmology,56-70,Female,High,2,Low,8,Emergency,General,Expert,1,43,23,15,19,49
+Hip Replacement,Orthopedics,0-18,Male,Low,2,Medium,11,Emergency,Regional,Expert,3,129,22,24,15,126
+Gum Graft Surgery,Periodontics,70+,Male,High,4,Low,7,Planned,Local,Junior,3,69,24,13,8,86
+Hip Replacement,Orthopedics,19-35,Male,Low,4,Low,6,Planned,General,Senior,3,153,12,20,17,132
+Spinal Fusion,Neurosurgery,19-35,Male,High,4,High,11,Planned,Regional,Expert,4,167,18,17,5,243
+Tooth Extraction,Oral Surgery,19-35,Male,High,3,High,10,Emergency,Sedation,Senior,0,32,21,14,20,56
+Total Knee Replacement,Orthopedics,19-35,Male,Medium,1,Low,10,Planned,Local,Senior,4,130,16,25,11,89
+Tonsillectomy,ENT,70+,Female,Medium,3,High,11,Planned,General,Senior,2,33,12,21,7,35
+Cataract Surgery,Ophthalmology,0-18,Female,Medium,4,Low,7,Emergency,Sedation,Expert,2,46,10,30,14,47
+Total Knee Replacement,Orthopedics,56-70,Female,Medium,1,Low,8,Emergency,Local,Junior,1,115,19,28,17,131
+Cataract Surgery,Ophthalmology,56-70,Male,High,2,High,3,Emergency,Local,Intermediate,4,52,22,30,10,78
+Tooth Extraction,Oral Surgery,36-55,Female,Medium,3,Low,3,Emergency,Sedation,Junior,0,28,9,18,20,42
+Tonsillectomy,ENT,0-18,Female,Medium,4,Medium,6,Emergency,Sedation,Expert,0,31,7,26,13,35
+Hip Replacement,Orthopedics,70+,Male,Medium,1,Medium,10,Planned,Local,Junior,2,152,23,25,7,169
+Cataract Surgery,Ophthalmology,0-18,Male,Medium,3,High,6,Emergency,Regional,Junior,4,44,5,21,20,93
+Root Canal Surgery,Endodontics,19-35,Male,High,4,High,3,Emergency,Sedation,Junior,2,79,5,24,17,161
+Total Knee Replacement,Orthopedics,56-70,Female,High,1,Low,11,Planned,Regional,Senior,0,98,18,30,6,102
+Jaw Cyst Removal,Oral Surgery,70+,Male,Low,2,Medium,3,Planned,Regional,Intermediate,0,69,14,28,7,75
+Tonsillectomy,ENT,70+,Female,High,1,Low,12,Planned,Regional,Junior,0,28,13,30,13,35
+Dental Implant Surgery,Oral Surgery,36-55,Female,Medium,4,Low,6,Planned,Local,Expert,2,62,17,12,11,52
+Periodontal Surgery,Periodontics,0-18,Female,Low,1,High,5,Emergency,Regional,Expert,4,83,19,30,12,102
+Spinal Fusion,Neurosurgery,56-70,Female,High,3,Medium,4,Emergency,Sedation,Intermediate,0,185,18,16,19,295
+Spinal Fusion,Neurosurgery,19-35,Male,Medium,3,High,10,Planned,Sedation,Senior,2,186,9,13,6,257
+Root Canal Surgery,Endodontics,0-18,Male,High,4,Medium,5,Emergency,General,Junior,0,69,22,27,5,127
+Periodontal Surgery,Periodontics,0-18,Female,Medium,4,High,3,Emergency,Sedation,Senior,1,102,20,16,16,132
+Spinal Fusion,Neurosurgery,70+,Male,Medium,3,High,12,Emergency,Regional,Expert,1,160,14,28,13,233
+Hip Replacement,Orthopedics,36-55,Male,High,2,High,9,Emergency,General,Intermediate,2,167,19,24,18,268
+Total Knee Replacement,Orthopedics,19-35,Male,Low,4,Medium,12,Planned,Regional,Junior,4,122,19,13,19,158
+Dental Implant Surgery,Oral Surgery,56-70,Male,Low,1,High,9,Emergency,Sedation,Expert,2,63,20,10,11,63
+Laparoscopic Cholecystectomy,General Surgery,36-55,Female,Medium,3,Medium,8,Planned,Local,Senior,3,101,9,14,17,98
+Root Canal Surgery,Endodontics,19-35,Male,Low,2,Medium,6,Emergency,Regional,Expert,2,76,5,26,16,69
+Root Canal Surgery,Endodontics,70+,Female,Low,1,Medium,3,Planned,Regional,Senior,1,82,8,17,14,62
+Tonsillectomy,ENT,0-18,Male,Medium,3,Low,9,Planned,Local,Senior,4,28,12,30,13,29
+Periodontal Surgery,Periodontics,56-70,Male,Medium,4,Low,9,Planned,Local,Intermediate,3,102,20,19,9,88
+Wisdom Tooth Removal,Oral Surgery,36-55,Female,High,4,Low,10,Planned,Local,Expert,2,39,19,25,7,32
+Gum Graft Surgery,Periodontics,70+,Female,Medium,2,Medium,10,Emergency,General,Senior,4,67,10,10,9,83
+Cataract Surgery,Ophthalmology,70+,Female,Medium,2,High,5,Planned,Sedation,Expert,3,45,11,10,20,46
+Root Canal Surgery,Endodontics,56-70,Male,Low,1,Medium,12,Emergency,General,Expert,4,75,23,11,16,70
+Root Canal Surgery,Endodontics,19-35,Male,High,4,High,12,Emergency,Local,Junior,3,67,11,23,8,162
+Wisdom Tooth Removal,Oral Surgery,70+,Male,High,1,Medium,8,Emergency,Local,Intermediate,3,28,15,14,8,48
+Laparoscopic Cholecystectomy,General Surgery,70+,Male,Medium,4,High,5,Planned,General,Intermediate,2,89,19,17,9,123
+Spinal Fusion,Neurosurgery,36-55,Female,Low,3,High,3,Planned,General,Expert,2,166,6,17,9,207
+Jaw Cyst Removal,Oral Surgery,56-70,Female,Low,4,Medium,10,Emergency,Regional,Expert,4,87,18,25,8,73
+Jaw Cyst Removal,Oral Surgery,0-18,Male,Low,1,High,11,Planned,Local,Junior,3,74,12,15,5,103
+Tonsillectomy,ENT,19-35,Female,Low,3,High,7,Emergency,General,Expert,2,30,17,26,14,37
+Spinal Fusion,Neurosurgery,0-18,Female,Low,1,High,7,Emergency,Local,Senior,3,153,16,22,9,240
+Root Canal Surgery,Endodontics,70+,Female,High,3,Medium,9,Emergency,General,Senior,1,62,11,18,6,99
+Cataract Surgery,Ophthalmology,56-70,Female,Low,3,High,4,Planned,Local,Intermediate,4,46,14,12,18,64
+Wisdom Tooth Removal,Oral Surgery,36-55,Male,Medium,1,Low,7,Planned,Local,Junior,3,38,9,11,14,38
+Gum Graft Surgery,Periodontics,70+,Male,High,1,High,9,Emergency,Local,Junior,4,62,18,16,15,128
+Hip Replacement,Orthopedics,0-18,Female,High,3,High,6,Emergency,Local,Junior,1,126,9,30,18,304
+Tonsillectomy,ENT,36-55,Male,Low,3,Medium,7,Planned,General,Junior,3,29,22,21,19,37
+Dental Implant Surgery,Oral Surgery,19-35,Male,Medium,2,Low,4,Emergency,General,Intermediate,4,67,17,26,18,62
+Gum Graft Surgery,Periodontics,19-35,Male,Low,1,Low,3,Emergency,Local,Expert,1,68,9,21,6,51
+Periodontal Surgery,Periodontics,0-18,Male,Medium,2,Medium,5,Emergency,Local,Senior,0,74,8,25,5,112
+Total Knee Replacement,Orthopedics,56-70,Female,Low,3,Medium,10,Planned,General,Intermediate,2,107,25,13,9,122
+Periodontal Surgery,Periodontics,0-18,Male,Medium,1,Medium,11,Planned,Local,Intermediate,1,92,10,22,17,103
+Tooth Extraction,Oral Surgery,56-70,Female,Low,4,High,5,Planned,Sedation,Expert,1,25,20,12,11,35
+Gum Graft Surgery,Periodontics,0-18,Male,Medium,3,High,5,Emergency,Sedation,Intermediate,1,72,5,18,11,111
+Cataract Surgery,Ophthalmology,56-70,Male,High,3,High,6,Emergency,Local,Expert,1,37,13,10,15,75
+Hip Replacement,Orthopedics,56-70,Male,Low,4,Low,8,Emergency,Regional,Senior,1,174,12,12,20,140
+Spinal Fusion,Neurosurgery,56-70,Male,Low,3,Medium,10,Emergency,Local,Senior,4,178,8,23,13,204
+Wisdom Tooth Removal,Oral Surgery,36-55,Male,High,2,High,11,Emergency,Regional,Intermediate,4,33,22,13,11,69
+Tonsillectomy,ENT,0-18,Female,High,2,Low,3,Planned,Sedation,Junior,1,34,18,22,7,35
+Total Knee Replacement,Orthopedics,70+,Female,Medium,3,Low,4,Planned,Local,Expert,4,96,25,12,17,100
+ACL Reconstruction,Orthopedics,70+,Male,Medium,1,Medium,9,Planned,General,Senior,4,119,9,25,12,101
+Tooth Extraction,Oral Surgery,36-55,Male,High,3,Low,3,Emergency,Local,Intermediate,1,30,12,30,18,42
+ACL Reconstruction,Orthopedics,56-70,Female,Medium,2,Low,12,Planned,Regional,Expert,3,131,15,25,20,80
+Dental Implant Surgery,Oral Surgery,19-35,Male,High,2,Low,9,Planned,General,Junior,3,49,15,21,9,73
+Spinal Fusion,Neurosurgery,70+,Female,Medium,3,Medium,6,Emergency,Regional,Intermediate,2,178,16,13,6,230
+Root Canal Surgery,Endodontics,70+,Female,High,1,Low,8,Planned,Regional,Intermediate,0,61,12,10,6,81
+Root Canal Surgery,Endodontics,19-35,Male,Medium,2,Medium,10,Emergency,Sedation,Senior,1,60,20,14,5,78
+Periodontal Surgery,Periodontics,70+,Male,High,1,Medium,10,Emergency,Local,Junior,3,95,19,25,6,140
+Periodontal Surgery,Periodontics,19-35,Female,Low,3,Low,10,Emergency,General,Junior,1,99,11,21,20,114
+Root Canal Surgery,Endodontics,0-18,Male,Medium,1,High,12,Emergency,Local,Junior,3,60,17,15,15,134
+Laparoscopic Cholecystectomy,General Surgery,19-35,Male,Medium,1,Medium,3,Emergency,Sedation,Intermediate,4,90,14,11,6,103
+Total Knee Replacement,Orthopedics,70+,Male,High,2,High,3,Planned,General,Senior,1,97,11,13,20,167

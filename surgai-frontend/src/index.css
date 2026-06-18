@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  /* ===== Color Palette: "Deep Surgical Cyber" ===== */
+
+  /* Cyan/Teal — Primary brand accent */
+  --color-cyan-50: #e6fffe;
+  --color-cyan-100: #b3fffd;
+  --color-cyan-200: #80fffc;
+  --color-cyan-300: #4dfffb;
+  --color-cyan-400: #1afff9;
+  --color-cyan-500: #00f2fe;
+  --color-cyan-600: #00c4d4;
+  --color-cyan-700: #0096a8;
+  --color-cyan-800: #006a7a;
+  --color-cyan-900: #00404d;
+  --color-cyan-950: #001a24;
+
+  /* Electric Violet — Model confidence / secondary accent */
+  --color-violet-50: #f0ecff;
+  --color-violet-100: #d6caff;
+  --color-violet-200: #b8a3ff;
+  --color-violet-300: #9a7aff;
+  --color-violet-400: #7c52ff;
+  --color-violet-500: #6c2bd9;
+  --color-violet-600: #5a1fba;
+  --color-violet-700: #48159b;
+  --color-violet-800: #360c7a;
+  --color-violet-900: #240559;
+  --color-violet-950: #120238;
+
+  /* Navy/Obsidian — Deep backgrounds */
+  --color-navy-50: #eef2fc;
+  --color-navy-100: #d9e3f7;
+  --color-navy-200: #baccef;
+  --color-navy-300: #8cace4;
+  --color-navy-400: #5788d6;
+  --color-navy-500: #356bc2;
+  --color-navy-600: #2654a5;
+  --color-navy-700: #1f4386;
+  --color-navy-800: #1d3a6f;
+  --color-navy-900: #1c335d;
+  --color-navy-950: #0e1729;
+
+  /* Glassmorphic surface colors */
+  --color-glass: rgba(15, 23, 42, 0.4);
+  --color-glass-border: rgba(71, 85, 105, 0.6);
+  --color-glass-light: rgba(255, 255, 255, 0.7);
+  --color-glass-border-light: rgba(203, 213, 225, 0.5);
+
+  /* Neon glow accents */
+  --color-amber-glow: #ff9f43;
+  --color-rose-neon: #ff4d4d;
+
+  /* Legacy color aliases for backward compatibility */
+  --color-surgai-50: #e6fffe;
+  --color-surgai-100: #b3fffd;
+  --color-surgai-200: #80fffc;
+  --color-surgai-300: #4dfffb;
+  --color-surgai-400: #1afff9;
+  --color-surgai-500: #00f2fe;
+  --color-surgai-600: #00c4d4;
+  --color-surgai-700: #0096a8;
+  --color-surgai-800: #006a7a;
+  --color-surgai-900: #00404d;
+  --color-surgai-950: #001a24;
+
+  --color-teal-50: #f0ecff;
+  --color-teal-100: #d6caff;
+  --color-teal-200: #b8a3ff;
+  --color-teal-300: #9a7aff;
+  --color-teal-400: #7c52ff;
+  --color-teal-500: #6c2bd9;
+  --color-teal-600: #5a1fba;
+  --color-teal-700: #48159b;
+  --color-teal-800: #360c7a;
+  --color-teal-900: #240559;
+  --color-teal-950: #120238;
+}
+
+/* ===== Base Styles ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #080b11;
+}
+
+/* Radial gradient mesh — subtle depth */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse at 15% 25%, rgba(0, 242, 254, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, rgba(108, 43, 217, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(255, 159, 67, 0.03) 0%, transparent 40%);
+}
+
+/* Light mode overrides */
+:root:not(.dark) body {
+  background-color: #f4f7f6;
+}
+
+:root:not(.dark) body::before {
+  background:
+    radial-gradient(ellipse at 15% 25%, rgba(0, 242, 254, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, rgba(108, 43, 217, 0.03) 0%, transparent 50%);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* ===== Scrollbar ===== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-cyan-400);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ===== Animations ===== */
+
+@keyframes scan {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    box-shadow: 0 0 4px var(--color-cyan-400);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 12px var(--color-cyan-400), 0 0 24px var(--color-cyan-500);
+  }
+}
+
+@keyframes ring-fill {
+  from {
+    stroke-dashoffset: 283;
+  }
+  to {
+    stroke-dashoffset: var(--ring-offset, 283);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-scan {
+  animation: scan 2s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-ring-fill {
+  animation: ring-fill 0.8s ease-out forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out forwards;
+}
+
+.animate-breathe {
+  animation: breathe 2.5s ease-in-out infinite;
+}
