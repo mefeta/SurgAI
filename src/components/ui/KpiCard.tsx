@@ -12,12 +12,12 @@ interface KpiCardProps {
 }
 
 const ringColors = {
-  cyan: { stroke: '#00f2fe', bg: '#00f2fe15' },
-  violet: { stroke: '#7c52ff', bg: '#7c52ff15' },
+  cyan: { stroke: '#ed1b24', bg: '#ed1b2415' },
+  violet: { stroke: '#385399', bg: '#38539915' },
   amber: { stroke: '#ff9f43', bg: '#ff9f4315' },
   rose: { stroke: '#ff4d4d', bg: '#ff4d4d15' },
-  surgai: { stroke: '#00f2fe', bg: '#00f2fe15' },
-  teal: { stroke: '#7c52ff', bg: '#7c52ff15' },
+  surgai: { stroke: '#ed1b24', bg: '#ed1b2415' },
+  teal: { stroke: '#385399', bg: '#38539915' },
   red: { stroke: '#ff4d4d', bg: '#ff4d4d15' },
   blue: { stroke: '#4facfe', bg: '#4facfe15' },
 }

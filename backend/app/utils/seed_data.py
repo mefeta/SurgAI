@@ -29,8 +29,8 @@ SPECIALTIES = {
 }
 
 SURGEONS = [
-    "Dr. Sarah Chen", "Dr. James Wilson", "Dr. Maria Rodriguez",
-    "Dr. Robert Kim", "Dr. Lisa Park", "Dr. Michael Torres",
+    "Dr. Efe Barış", "Dr. Ayşe Yılmaz", "Dr. Mehmet Demir",
+    "Dr. Zeynep Kaya", "Dr. Can Öztürk", "Dr. Elif Şahin",
 ]
 
 EXPERIENCE = ["Junior", "Intermediate", "Senior", "Expert"]
@@ -65,9 +65,9 @@ def seed_demo_data(db: Session):
     db.add(admin)
 
     doctor = User(
-        username="drodriguez",
-        full_name="Dr. Maria Rodriguez",
-        email="dr.rodriguez@surgai-demo.com",
+        username="efe",
+        full_name="Dr. Efe Barış",
+        email="dr.efe@surgai-demo.com",
         password_hash=hash_password("doctor123"),
         role="clinic_manager",
         is_admin=False,
@@ -75,8 +75,8 @@ def seed_demo_data(db: Session):
     )
     db.add(doctor)
 
-    # Surgical Cases + Predictions
-    for i in range(20):
+    # Surgical Cases + Predictions + Schedules
+    for i in range(40):
         op_type = random.choice(OPERATION_TYPES)
         complexity = random.choice(COMPLEXITY)
         experience = random.choice(EXPERIENCE)
@@ -102,7 +102,7 @@ def seed_demo_data(db: Session):
             equipment_preparation_time=random.randint(5, 25),
             cleaning_turnover_time=random.randint(10, 30),
             preop_preparation_duration=random.randint(5, 20),
-            status="completed" if i < 15 else "predicted",
+            status="completed" if i < 30 else "predicted",
             notes=f"Sample case {i + 1} for {op_type}.",
         )
         db.add(case)
@@ -132,31 +132,39 @@ def seed_demo_data(db: Session):
         )
         db.add(pred)
 
-        # Schedule
-        if i < 12:
-            sched_date = datetime.utcnow() + timedelta(days=i % 7)
-            start_h = random.randint(8, 15)
-            end_h = start_h + (predicted // 60) + 1
-            status = random.choice(["scheduled", "completed", "delayed"])
-            conflict = None
-            if random.random() < 0.15:
-                conflict = f"Potential conflict in room assignment."
-
-            sched = Schedule(
-                surgical_case_id=case.id,
-                case_id=case.case_id,
-                scheduled_date=sched_date,
-                start_time=f"{start_h:02d}:00",
-                end_time=f"{min(end_h, 23):02d}:{random.randint(0, 59):02d}",
-                room_number=random.choice(ROOMS),
-                assigned_surgeon=random.choice(SURGEONS),
-                operation_type=op_type,
-                predicted_duration=predicted,
-                risk_level=risk,
-                schedule_status=status,
-                conflict_warning=conflict,
+        # Schedule (for ALL cases — spanning past 14 days through future)
+        if i < 30:
+            sched_date = datetime.utcnow() - timedelta(days=14) + timedelta(days=i)
+        else:
+            sched_date = datetime.utcnow() + timedelta(days=i - 29)
+        start_h = random.randint(8, 15)
+        end_h = start_h + (predicted // 60) + 1
+        is_past = sched_date < datetime.utcnow() or (sched_date.date() == datetime.utcnow().date() and start_h < datetime.utcnow().hour)
+        status = random.choice(["scheduled", "completed", "delayed"]) if is_past else "scheduled"
+        conflict = None
+        room = random.choice(ROOMS)
+        end_m = random.randint(0, 59)
+        if random.random() < 0.15:
+            conflict = (
+                f"Room {room} is already booked for {random.choice(OPERATION_TYPES)} "
+                f"from {start_h:02d}:00 to {min(end_h, 23):02d}:{end_m:02d}."
             )
-            db.add(sched)
+
+        sched = Schedule(
+            surgical_case_id=case.id,
+            case_id=case.case_id,
+            scheduled_date=sched_date,
+            start_time=f"{start_h:02d}:00",
+            end_time=f"{min(end_h, 23):02d}:{end_m:02d}",
+            room_number=room,
+            assigned_surgeon=random.choice(SURGEONS),
+            operation_type=op_type,
+            predicted_duration=predicted,
+            risk_level=risk,
+            schedule_status=status,
+            conflict_warning=conflict,
+        )
+        db.add(sched)
 
     # Datasets
     for i in range(3):

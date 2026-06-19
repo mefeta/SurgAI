@@ -34,7 +34,7 @@ export function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#080b11] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#0b1124] flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
@@ -116,7 +116,7 @@ export function LoginPage() {
                 <span className="ml-2 text-[10px] px-1.5 py-0.5 bg-cyan-500/15 text-cyan-400 border border-cyan-500/30 rounded">{t('login.admin')}</span>
               </p>
               <p>
-                <span className="font-mono text-violet-400">drodriguez</span> / <span className="font-mono text-violet-400">doctor123</span>
+                <span className="font-mono text-violet-400">efe</span> / <span className="font-mono text-violet-400">doctor123</span>
                 <span className="ml-2 text-[10px] px-1.5 py-0.5 bg-violet-500/15 text-violet-400 border border-violet-500/30 rounded">{t('login.doctor')}</span>
               </p>
             </div>

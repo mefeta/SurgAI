@@ -377,10 +377,12 @@ export function PredictionPage() {
                     onChange={(e) => updateField('roomType', e.target.value)}
                   >
                     <option value="">{t('prediction.select')}</option>
-                    <option value="Standard OR">Standard OR</option>
-                    <option value="Dental Suite">Dental Suite</option>
-                    <option value="Endoscopy Suite">Endoscopy Suite</option>
-                    <option value="Hybrid OR">Hybrid OR</option>
+                    <option value="OR-1">OR-1</option>
+                    <option value="OR-2">OR-2</option>
+                    <option value="OR-3">OR-3</option>
+                    <option value="OR-4">OR-4</option>
+                    <option value="DEN-1">DEN-1</option>
+                    <option value="DEN-2">DEN-2</option>
                   </select>
                 </div>
 

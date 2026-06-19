@@ -19,7 +19,7 @@ export function AppLayout() {
   }
 
   return (
-    <div className="min-h-screen bg-[#080b11] dark:bg-[#080b11] not-dark:bg-[#f4f7f6] text-slate-100 dark:text-slate-100 not-dark:text-slate-900 relative">
+    <div className="min-h-screen bg-[#0b1124] dark:bg-[#0b1124] not-dark:bg-[#f4f7f6] text-slate-100 dark:text-slate-100 not-dark:text-slate-900 relative">
       <Navbar darkMode={darkMode} onToggleDark={toggleDark} />
       <main className="relative z-10 p-4 lg:p-6 pb-4">
         <Outlet />

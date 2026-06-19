@@ -1,20 +1,12 @@
 import { useNavigate } from 'react-router-dom'
-import { Button } from '@/components/ui/Button'
-import { Card } from '@/components/ui/Card'
-import { Badge } from '@/components/ui/Badge'
 import { useLocale } from '@/context/LocaleContext'
 import {
-  Clock,
-  TrendingDown,
-  Activity,
-  CalendarCheck,
-  BarChart3,
-  Shield,
   Brain,
+  CalendarCheck,
+  TrendingDown,
   ArrowRight,
-  CheckCircle,
   Users,
-  Hospital,
+  BarChart3,
   Target,
 } from 'lucide-react'
 
@@ -23,45 +15,17 @@ const features = [
     icon: Brain,
     titleKey: 'landing.feature1Title',
     descKey: 'landing.feature1Desc',
-    color: 'from-surgai-500 to-blue-600',
   },
   {
     icon: CalendarCheck,
     titleKey: 'landing.feature2Title',
     descKey: 'landing.feature2Desc',
-    color: 'from-teal-500 to-emerald-600',
-  },
-  {
-    icon: Clock,
-    titleKey: 'landing.feature3Title',
-    descKey: 'landing.feature3Desc',
-    color: 'from-violet-500 to-purple-600',
   },
   {
     icon: TrendingDown,
     titleKey: 'landing.feature4Title',
     descKey: 'landing.feature4Desc',
-    color: 'from-amber-500 to-orange-600',
   },
-  {
-    icon: BarChart3,
-    titleKey: 'landing.feature5Title',
-    descKey: 'landing.feature5Desc',
-    color: 'from-cyan-500 to-teal-600',
-  },
-  {
-    icon: Shield,
-    titleKey: 'landing.feature6Title',
-    descKey: 'landing.feature6Desc',
-    color: 'from-rose-500 to-pink-600',
-  },
-]
-
-const stats = [
-  { icon: Target, valueKey: 'landing.stat1Value', labelKey: 'landing.stat1Label', color: 'text-teal-600' },
-  { icon: TrendingDown, valueKey: 'landing.stat2Value', labelKey: 'landing.stat2Label', color: 'text-surgai-600' },
-  { icon: Activity, valueKey: 'landing.stat3Value', labelKey: 'landing.stat3Label', color: 'text-violet-600' },
-  { icon: Clock, valueKey: 'landing.stat4Value', labelKey: 'landing.stat4Label', color: 'text-amber-600' },
 ]
 
 export function LandingPage() {
@@ -69,207 +33,682 @@ export function LandingPage() {
   const { t } = useLocale()
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-      {/* Navigation */}
-      <header className="border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+    <div className="min-h-screen" style={{ backgroundColor: '#0b1124', color: '#ffffff' }}>
+      {/* Ambient background — red and navy glows */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <div className="absolute top-[-15%] right-[-5%] w-[70%] h-[70%] rounded-full opacity-[0.05]"
+          style={{
+            background:
+              'radial-gradient(ellipse at center, #ed1b24 0%, transparent 70%)',
+          }}
+        />
+        <div className="absolute bottom-[-10%] left-[-5%] w-[50%] h-[50%] rounded-full opacity-[0.04]"
+          style={{
+            background:
+              'radial-gradient(ellipse at center, #23408e 0%, transparent 70%)',
+          }}
+        />
+        {/* Graph-paper dot grid */}
+        <svg className="absolute inset-0 w-full h-full opacity-[0.015]">
+          <defs>
+            <pattern id="landing-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+              <circle cx="20" cy="20" r="0.8" fill="white" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#landing-grid)" />
+        </svg>
+      </div>
+
+      {/* ===== HEADER ===== */}
+      <header className="relative z-10"
+        style={{ borderBottom: '1px solid rgba(255,255,255,0.04)' }}
+      >
+        <div className="mx-auto px-6 lg:px-10" style={{ maxWidth: '1280px' }}>
+          <div className="flex items-center justify-between" style={{ height: '64px' }}>
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-surgai-500 to-teal-500 flex items-center justify-center">
-                <Activity className="w-5 h-5 text-white" />
+              <div className="flex items-center justify-center rounded-md"
+                style={{
+                  width: 28,
+                  height: 28,
+                  background: '#ed1b24',
+                  boxShadow: '0 0 12px rgba(237,27,36,0.25)',
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
               </div>
-              <span className="text-xl font-bold">
-                <span className="text-slate-900 dark:text-white">Surg</span>
-                <span className="text-surgai-500">AI</span>
+              <span className="text-base font-semibold tracking-tight"
+                style={{ fontFamily: "'DM Sans', sans-serif" }}
+              >
+                Surg<span style={{ color: '#ed1b24' }}>AI</span>
               </span>
             </div>
+
             <nav className="hidden md:flex items-center gap-8">
-              <a href="#features" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">{t('landing.features')}</a>
-              <a href="#stats" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">{t('landing.statistics')}</a>
-              <a href="#about" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">{t('landing.about')}</a>
+              <a href="#features" className="text-sm transition-colors"
+                style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+                onMouseEnter={e => e.currentTarget.style.color = '#ffffff'}
+                onMouseLeave={e => e.currentTarget.style.color = '#7a7e86'}
+              >
+                {t('landing.features')}
+              </a>
+              <a href="#stats" className="text-sm transition-colors"
+                style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+                onMouseEnter={e => e.currentTarget.style.color = '#ffffff'}
+                onMouseLeave={e => e.currentTarget.style.color = '#7a7e86'}
+              >
+                {t('landing.statistics')}
+              </a>
+              <a href="#about" className="text-sm transition-colors"
+                style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+                onMouseEnter={e => e.currentTarget.style.color = '#ffffff'}
+                onMouseLeave={e => e.currentTarget.style.color = '#7a7e86'}
+              >
+                {t('landing.about')}
+              </a>
             </nav>
+
             <div className="flex items-center gap-3">
-              <Button variant="ghost" size="sm" onClick={() => navigate('/login')}>
+              <button
+                onClick={() => navigate('/login')}
+                className="text-sm transition-colors px-4 py-2 rounded-lg"
+                style={{
+                  color: '#7a7e86',
+                  fontFamily: "'DM Sans', sans-serif",
+                }}
+                onMouseEnter={e => e.currentTarget.style.color = '#ffffff'}
+                onMouseLeave={e => e.currentTarget.style.color = '#7a7e86'}
+              >
                 {t('landing.signIn')}
-              </Button>
-              <Button size="sm" onClick={() => navigate('/login')}>
+              </button>
+              <button
+                onClick={() => navigate('/login')}
+                className="text-sm font-medium px-5 py-2 rounded-lg transition-all duration-200"
+                style={{
+                  backgroundColor: '#ed1b24',
+                  color: '#ffffff',
+                  fontFamily: "'DM Sans', sans-serif",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.backgroundColor = '#f53b42'
+                  e.currentTarget.style.transform = 'scale(1.02)'
+                  e.currentTarget.style.boxShadow = '0 0 16px rgba(230,57,70,0.3)'
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.backgroundColor = '#ed1b24'
+                  e.currentTarget.style.transform = 'scale(1)'
+                  e.currentTarget.style.boxShadow = 'none'
+                }}
+              >
                 {t('landing.getStarted')}
-              </Button>
+              </button>
             </div>
           </div>
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 lg:pt-28 lg:pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <Badge variant="info" size="md">{t('landing.heroBadge')}</Badge>
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
+      {/* ===== HERO ===== */}
+      <section className="relative z-10 mx-auto px-6 lg:px-10"
+        style={{ maxWidth: '1280px', paddingTop: '100px', paddingBottom: '80px' }}
+      >
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          {/* Left — Editorial Text */}
+          <div className="lg:col-span-7 space-y-8"
+            style={{ animation: 'fade-up 0.6s ease-out' }}
+          >
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium tracking-wide uppercase"
+              style={{
+                color: '#ed1b24',
+                border: '1px solid rgba(237,27,36,0.2)',
+                backgroundColor: 'rgba(237,27,36,0.06)',
+                fontFamily: "'DM Sans', sans-serif",
+                letterSpacing: '0.08em',
+              }}
+            >
+              <span className="w-1.5 h-1.5 rounded-full"
+                style={{
+                  backgroundColor: '#ed1b24',
+                  animation: 'pulse-glow 2s ease-in-out infinite',
+                }}
+              />
+              {t('landing.heroBadge')}
+            </div>
+
+            <h1 className="text-[3rem] leading-[1.08] lg:text-[4rem] xl:text-[4.8rem] font-normal tracking-[-0.02em]"
+              style={{
+                fontFamily: "'DM Serif Display', serif",
+                color: '#ffffff',
+              }}
+            >
               {t('landing.heroTitle')}{' '}
-              <span className="bg-gradient-to-r from-surgai-500 to-teal-500 bg-clip-text text-transparent">AI</span>
+              <span style={{ color: '#ed1b24' }}>intelligence</span>
             </h1>
-            <p className="text-lg lg:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
+
+            <p className="text-base lg:text-lg leading-relaxed max-w-lg"
+              style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+            >
               {t('landing.heroDesc')}
             </p>
+
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" onClick={() => navigate('/login')}>
-                <Brain className="w-5 h-5" />
+              <button
+                onClick={() => navigate('/login')}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200"
+                style={{
+                  backgroundColor: '#ed1b24',
+                  color: '#ffffff',
+                  fontFamily: "'DM Sans', sans-serif",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.backgroundColor = '#f53b42'
+                  e.currentTarget.style.boxShadow = '0 0 20px rgba(230,57,70,0.3)'
+                  e.currentTarget.style.transform = 'scale(1.02)'
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.backgroundColor = '#ed1b24'
+                  e.currentTarget.style.boxShadow = 'none'
+                  e.currentTarget.style.transform = 'scale(1)'
+                }}
+              >
+                <Brain size={18} />
                 {t('landing.startPrediction')}
-              </Button>
-              <Button variant="outline" size="lg" onClick={() => navigate('/login')}>
+              </button>
+              <button
+                onClick={() => navigate('/login')}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200"
+                style={{
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  color: '#c0c4cc',
+                  backgroundColor: 'rgba(255,255,255,0.03)',
+                  fontFamily: "'DM Sans', sans-serif",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'
+                  e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.06)'
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'
+                  e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.03)'
+                }}
+              >
                 {t('landing.viewDashboard')}
-                <ArrowRight className="w-4 h-4" />
-              </Button>
+                <ArrowRight size={16} />
+              </button>
             </div>
-            <div className="flex items-center gap-6 text-sm text-slate-500 dark:text-slate-500">
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-teal-500" /> {t('landing.hipaa')}</span>
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-teal-500" /> {t('landing.clinicReady')}</span>
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-teal-500" /> {t('landing.fdaListed')}</span>
+
+            <div className="flex items-center gap-5 text-xs"
+              style={{ color: '#5c6068', fontFamily: "'DM Sans', sans-serif" }}
+            >
+              <span className="flex items-center gap-1.5">
+                <span style={{ color: '#ed1b24' }}>&#x2713;</span>
+                HIPAA Compliant
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span style={{ color: '#ed1b24' }}>&#x2713;</span>
+                Clinic Ready
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span style={{ color: '#ed1b24' }}>&#x2713;</span>
+                94.2% Accuracy
+              </span>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-surgai-500/10 to-teal-500/10 rounded-3xl blur-3xl" />
-            <Card className="relative p-8 overflow-hidden border-slate-300/50 dark:border-slate-700/50 shadow-xl">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-surgai-500/5 to-teal-500/5 rounded-full blur-2xl" />
-              <div className="space-y-6 relative">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{t('landing.liveDemo')}</h3>
-                  <Badge variant="success" size="sm">{t('landing.aiActive')}</Badge>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
-                    <span className="text-sm text-slate-600 dark:text-slate-400">{t('landing.operation')}</span>
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">{t('landing.totalKnee')}</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
-                    <span className="text-sm text-slate-600 dark:text-slate-400">{t('landing.surgeon')}</span>
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">{t('landing.drSarah')}</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
-                    <span className="text-sm text-slate-600 dark:text-slate-400">{t('landing.complexity')}</span>
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">{t('landing.high')}</span>
-                  </div>
-                  <div className="border-t border-slate-200 dark:border-slate-700 pt-4 mt-4">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-slate-500 dark:text-slate-400">{t('landing.predictedDuration')}</span>
-                      <span className="text-2xl font-bold text-surgai-600 dark:text-surgai-400">74 {t('prediction.min')}</span>
+          {/* Right — Clinical Monitor Visual */}
+          <div className="lg:col-span-5 flex justify-center"
+            style={{ animation: 'fade-up 0.6s ease-out 0.15s both' }}
+          >
+            <div className="relative w-full"
+              style={{ maxWidth: 380 }}
+            >
+              {/* Glow behind */}
+              <div className="absolute -inset-6 rounded-[32px] opacity-30"
+                style={{
+                  background: 'radial-gradient(ellipse at center, rgba(237,27,36,0.12) 0%, transparent 70%)',
+                }}
+              />
+
+              {/* Monitor card */}
+              <div className="relative overflow-hidden rounded-2xl p-[1px]"
+                style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, transparent 100%)' }}
+              >
+                <div className="rounded-2xl p-6"
+                  style={{
+                    backgroundColor: 'rgba(11,17,36,0.85)',
+                    backdropFilter: 'blur(20px)',
+                  }}
+                >
+                  {/* Monitor header */}
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-2.5">
+                      <div className="flex gap-1.5">
+                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#ed1b24' }} />
+                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#f4a261' }} />
+                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#ed1b24' }} />
+                      </div>
+                      <span className="text-[11px] font-medium tracking-wider uppercase ml-1"
+                        style={{ color: '#4a4e56', fontFamily: "'DM Sans', sans-serif", letterSpacing: '0.1em' }}
+                      >
+                        OR Monitor
+                      </span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-slate-500 dark:text-slate-400">{t('landing.confidence')}</span>
-                      <span className="text-sm font-semibold text-teal-600">87%</span>
+                    <div className="flex items-center gap-1.5 text-[10px] font-medium tracking-wider uppercase"
+                      style={{ color: '#ed1b24', fontFamily: "'DM Sans', sans-serif", letterSpacing: '0.08em' }}
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full"
+                        style={{
+                          backgroundColor: '#ed1b24',
+                          boxShadow: '0 0 6px rgba(237,27,36,0.6)',
+                        }}
+                      />
+                      Active
+                    </div>
+                  </div>
+
+                  {/* Operation info */}
+                  <div className="space-y-4">
+                    <div>
+                      <div className="flex items-center justify-between mb-1.5">
+                        <span className="text-[11px] tracking-wider uppercase"
+                          style={{ color: '#4a4e56', fontFamily: "'DM Sans', sans-serif", letterSpacing: '0.06em' }}
+                        >
+                          Current Case
+                        </span>
+                        <span className="text-xs font-medium"
+                          style={{ color: '#ed1b24', fontFamily: "'DM Sans', sans-serif" }}
+                        >
+                          TKA-2407
+                        </span>
+                      </div>
+                      <p className="text-sm"
+                        style={{ color: '#e0e2e6', fontFamily: "'DM Sans', sans-serif" }}
+                      >
+                        Total Knee Replacement
+                      </p>
+                    </div>
+
+                    {/* Heart-rate line */}
+                    <div className="py-1">
+                      <svg viewBox="0 0 300 40" className="w-full" style={{ height: 32 }}>
+                        <defs>
+                          <linearGradient id="ecg-line-grad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stopColor="#ed1b24" stopOpacity="0" />
+                            <stop offset="15%" stopColor="#ed1b24" stopOpacity="1" />
+                            <stop offset="85%" stopColor="#ed1b24" stopOpacity="1" />
+                            <stop offset="100%" stopColor="#ed1b24" stopOpacity="0" />
+                          </linearGradient>
+                        </defs>
+                        {/* Grid lines */}
+                        <line x1="0" y1="8" x2="300" y2="8" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" />
+                        <line x1="0" y1="20" x2="300" y2="20" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" />
+                        <line x1="0" y1="32" x2="300" y2="32" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" />
+                        {/* ECG waveform */}
+                        <path
+                          d="M0,20 L30,20 L35,12 L40,28 L45,20 L60,20 L65,14 L70,26 L75,20 L90,20 L95,8 L100,32 L105,20 L120,20 L130,20 L135,16 L140,24 L145,20 L160,20 L165,12 L170,28 L175,20 L190,20 L200,20 L205,14 L210,26 L215,20 L230,20 L235,10 L240,30 L245,20 L260,20 L270,20 L275,16 L280,24 L285,20 L300,20"
+                          fill="none"
+                          stroke="url(#ecg-line-grad)"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="animate-[ecg-draw_3s_ease-out_forwards]"
+                          style={{
+                            strokeDasharray: 600,
+                            strokeDashoffset: 600,
+                            animation: 'ecg-draw 4s ease-out forwards',
+                          }}
+                        />
+                      </svg>
+                    </div>
+
+                    {/* Metrics grid */}
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="rounded-xl p-3.5"
+                        style={{ backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.04)' }}
+                      >
+                        <p className="text-[10px] tracking-wider uppercase mb-1"
+                          style={{ color: '#4a4e56', fontFamily: "'DM Sans', sans-serif", letterSpacing: '0.08em' }}
+                        >
+                          Est. Duration
+                        </p>
+                        <p className="text-xl font-medium tracking-tight"
+                          style={{ color: '#ffffff', fontFamily: "'DM Sans', sans-serif" }}
+                        >
+                          74<span className="text-xs font-normal" style={{ color: '#5c6068' }}>min</span>
+                        </p>
+                      </div>
+                      <div className="rounded-xl p-3.5"
+                        style={{ backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.04)' }}
+                      >
+                        <p className="text-[10px] tracking-wider uppercase mb-1"
+                          style={{ color: '#4a4e56', fontFamily: "'DM Sans', sans-serif", letterSpacing: '0.08em' }}
+                        >
+                          Confidence
+                        </p>
+                        <p className="text-xl font-medium tracking-tight"
+                          style={{ color: '#ed1b24', fontFamily: "'DM Sans', sans-serif" }}
+                        >
+                          92%
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Progress bar */}
+                    <div>
+                      <div className="flex items-center justify-between text-[10px] tracking-wider uppercase mb-1.5"
+                        style={{ color: '#4a4e56', fontFamily: "'DM Sans', sans-serif", letterSpacing: '0.06em' }}
+                      >
+                        <span>Progress</span>
+                        <span>62%</span>
+                      </div>
+                      <div className="h-1 rounded-full overflow-hidden"
+                        style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}
+                      >
+                        <div className="h-full rounded-full transition-all"
+                          style={{
+                            width: '62%',
+                            backgroundColor: '#ed1b24',
+                          }}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section id="features" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="text-center mb-12">
-          <Badge variant="info" size="md">{t('landing.platformFeatures')}</Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mt-4 mb-4">
+      {/* ===== FEATURES ===== */}
+      <section id="features" className="relative z-10 mx-auto px-6 lg:px-10"
+        style={{ maxWidth: '1280px', paddingTop: '60px', paddingBottom: '100px' }}
+      >
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase mb-6"
+            style={{
+              color: '#ed1b24',
+              border: '1px solid rgba(237,27,36,0.2)',
+              backgroundColor: 'rgba(237,27,36,0.06)',
+              fontFamily: "'DM Sans', sans-serif",
+              letterSpacing: '0.08em',
+            }}
+          >
+            {t('landing.platformFeatures')}
+          </div>
+          <h2 className="text-3xl lg:text-4xl font-normal mb-4 tracking-[-0.01em]"
+            style={{
+              fontFamily: "'DM Serif Display', serif",
+              color: '#ffffff',
+            }}
+          >
             {t('landing.featuresTitle')}
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-base max-w-xl mx-auto"
+            style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+          >
             {t('landing.featuresDesc')}
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature) => (
-            <Card key={feature.titleKey} hover className="group p-6">
-              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform duration-200`}>
-                <feature.icon className="w-6 h-6 text-white" />
+
+        <div className="grid md:grid-cols-3 gap-5">
+          {features.map((feature, i) => (
+            <div
+              key={feature.titleKey}
+              className="group rounded-2xl p-8 transition-all duration-300"
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.02)',
+                border: '1px solid rgba(255,255,255,0.05)',
+                animation: `fade-up 0.5s ease-out ${0.1 + i * 0.1}s both`,
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.backgroundColor = 'rgba(237,27,36,0.04)'
+                e.currentTarget.style.borderColor = 'rgba(237,27,36,0.15)'
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.02)'
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)'
+              }}
+            >
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-5 transition-colors"
+                style={{
+                  backgroundColor: 'rgba(237,27,36,0.08)',
+                  border: '1px solid rgba(237,27,36,0.1)',
+                }}
+              >
+                <feature.icon className="w-5 h-5" style={{ color: '#ed1b24' }} />
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">{t(feature.titleKey)}</h3>
-              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{t(feature.descKey)}</p>
-            </Card>
+              <h3 className="text-base font-medium mb-3"
+                style={{ color: '#ffffff', fontFamily: "'DM Sans', sans-serif" }}
+              >
+                {t(feature.titleKey)}
+              </h3>
+              <p className="text-sm leading-relaxed"
+                style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+              >
+                {t(feature.descKey)}
+              </p>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Stats */}
-      <section id="stats" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-900 p-8 lg:p-12 shadow-xl">
-          <div className="text-center mb-10">
-            <Badge variant="info" size="md" className="bg-white/10 text-white">{t('landing.performanceMetrics')}</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mt-4">
+      {/* ===== STATS ===== */}
+      <section id="stats" className="relative z-10 mx-auto px-6 lg:px-10"
+        style={{ maxWidth: '1280px', paddingTop: '60px', paddingBottom: '100px' }}
+      >
+        <div className="rounded-3xl p-10 lg:p-16"
+          style={{
+            backgroundColor: 'rgba(255,255,255,0.02)',
+            border: '1px solid rgba(255,255,255,0.05)',
+          }}
+        >
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase mb-6"
+              style={{
+                color: '#ed1b24',
+                border: '1px solid rgba(237,27,36,0.2)',
+                backgroundColor: 'rgba(237,27,36,0.06)',
+                fontFamily: "'DM Sans', sans-serif",
+                letterSpacing: '0.08em',
+              }}
+            >
+              {t('landing.performanceMetrics')}
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-normal tracking-[-0.01em]"
+              style={{
+                fontFamily: "'DM Serif Display', serif",
+                color: '#ffffff',
+              }}
+            >
               {t('landing.provenResults')}
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <div key={stat.labelKey} className="text-center">
-                <stat.icon className={`w-8 h-8 ${stat.color} mx-auto mb-3`} />
-                <p className="text-3xl lg:text-4xl font-bold text-white mb-1">{t(stat.valueKey)}</p>
-                <p className="text-sm text-slate-400">{t(stat.labelKey)}</p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+            {[
+              { value: t('landing.stat1Value'), label: t('landing.stat1Label'), color: '#ed1b24' },
+              { value: t('landing.stat2Value'), label: t('landing.stat2Label'), color: '#ed1b24' },
+              { value: t('landing.stat3Value'), label: t('landing.stat3Label'), color: '#f4a261' },
+              { value: t('landing.stat4Value'), label: t('landing.stat4Label'), color: '#ed1b24' },
+            ].map((stat, i) => (
+              <div key={stat.label} className="text-center"
+                style={{ animation: `fade-up 0.5s ease-out ${0.1 + i * 0.08}s both` }}
+              >
+                <p className="text-4xl lg:text-5xl font-medium tracking-tight mb-1"
+                  style={{ color: stat.color, fontFamily: "'DM Serif Display', serif" }}
+                >
+                  {stat.value}
+                </p>
+                <p className="text-sm"
+                  style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+                >
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* About / Value Prop */}
-      <section id="about" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <Badge variant="info" size="md">{t('landing.whySurgAI')}</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mt-4 mb-4">
+      {/* ===== ABOUT / CTA ===== */}
+      <section id="about" className="relative z-10 mx-auto px-6 lg:px-10"
+        style={{ maxWidth: '1280px', paddingTop: '60px', paddingBottom: '100px' }}
+      >
+        <div className="grid lg:grid-cols-12 gap-14 lg:gap-20 items-center">
+          {/* Left */}
+          <div className="lg:col-span-7 space-y-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase"
+              style={{
+                color: '#ed1b24',
+                border: '1px solid rgba(237,27,36,0.2)',
+                backgroundColor: 'rgba(237,27,36,0.06)',
+                fontFamily: "'DM Sans', sans-serif",
+                letterSpacing: '0.08em',
+              }}
+            >
+              {t('landing.whySurgAI')}
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-normal tracking-[-0.01em]"
+              style={{
+                fontFamily: "'DM Serif Display', serif",
+                color: '#ffffff',
+              }}
+            >
               {t('landing.whyTitle')}
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
+            <p className="text-base leading-relaxed max-w-xl"
+              style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+            >
               {t('landing.whyDesc')}
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 pt-2">
               {[
-                { icon: Users, textKey: 'landing.trustedBy' },
-                { icon: Hospital, textKey: 'landing.integrates' },
-                { icon: Target, textKey: 'landing.accuracy' },
+                { icon: Users, text: t('landing.trustedBy') },
+                { icon: BarChart3, text: t('landing.integrates') },
+                { icon: Target, text: t('landing.accuracy') },
               ].map((item) => (
-                <div key={item.textKey} className="flex items-start gap-3">
-                  <item.icon className="w-5 h-5 text-surgai-500 mt-0.5 shrink-0" />
-                  <span className="text-sm text-slate-600 dark:text-slate-400">{t(item.textKey)}</span>
+                <div key={item.text} className="flex items-center gap-3 text-sm"
+                  style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+                >
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center"
+                    style={{
+                      backgroundColor: 'rgba(237,27,36,0.08)',
+                      border: '1px solid rgba(237,27,36,0.1)',
+                    }}
+                  >
+                    <item.icon className="w-4 h-4" style={{ color: '#ed1b24' }} />
+                  </div>
+                  {item.text}
                 </div>
               ))}
             </div>
           </div>
-          <Card className="p-8 border-slate-300/50 dark:border-slate-700/50 shadow-lg">
-            <div className="space-y-5">
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{t('landing.ctaTitle')}</h3>
-              <p className="text-sm text-slate-600 dark:text-slate-400">{t('landing.ctaDesc')}</p>
-              <div className="space-y-3">
-                {['landing.ctaItem1', 'landing.ctaItem2', 'landing.ctaItem3', 'landing.ctaItem4'].map((key) => (
-                  <div key={key} className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-300">
-                    <CheckCircle className="w-4 h-4 text-teal-500 shrink-0" />
-                    {t(key)}
+
+          {/* Right — CTA */}
+          <div className="lg:col-span-5">
+            <div className="rounded-2xl p-8 lg:p-10"
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.02)',
+                border: '1px solid rgba(255,255,255,0.05)',
+              }}
+            >
+              <h3 className="text-xl font-medium mb-3"
+                style={{ color: '#ffffff', fontFamily: "'DM Sans', sans-serif" }}
+              >
+                {t('landing.ctaTitle')}
+              </h3>
+              <p className="text-sm mb-6"
+                style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+              >
+                {t('landing.ctaDesc')}
+              </p>
+              <div className="space-y-3 mb-7">
+                {[
+                  t('landing.ctaItem1'),
+                  t('landing.ctaItem2'),
+                  t('landing.ctaItem3'),
+                  t('landing.ctaItem4'),
+                ].map((text) => (
+                  <div key={text} className="flex items-center gap-2.5 text-sm"
+                    style={{ color: '#7a7e86', fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0"
+                      style={{
+                        backgroundColor: 'rgba(237,27,36,0.12)',
+                        border: '1px solid rgba(237,27,36,0.2)',
+                      }}
+                    >
+                      <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#ed1b24' }} />
+                    </div>
+                    {text}
                   </div>
                 ))}
               </div>
-              <Button size="lg" className="w-full" onClick={() => navigate('/login')}>
-                <Activity className="w-5 h-5" />
+              <button
+                onClick={() => navigate('/login')}
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200"
+                style={{
+                  backgroundColor: '#ed1b24',
+                  color: '#ffffff',
+                  fontFamily: "'DM Sans', sans-serif",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.backgroundColor = '#f53b42'
+                  e.currentTarget.style.boxShadow = '0 0 16px rgba(230,57,70,0.25)'
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.backgroundColor = '#ed1b24'
+                  e.currentTarget.style.boxShadow = 'none'
+                }}
+              >
                 {t('landing.enterDashboard')}
-              </Button>
+              </button>
             </div>
-          </Card>
+          </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* ===== FOOTER ===== */}
+      <footer className="relative z-10"
+        style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}
+      >
+        <div className="mx-auto px-6 lg:px-10"
+          style={{ maxWidth: '1280px', paddingTop: '32px', paddingBottom: '32px' }}
+        >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
-              <Activity className="w-4 h-4 text-surgai-500" />
+            <div className="flex items-center gap-2 text-sm"
+              style={{ color: '#5c6068', fontFamily: "'DM Sans', sans-serif" }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ed1b24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
               <span>{t('landing.footerCopyright')}</span>
             </div>
-            <div className="flex items-center gap-6 text-sm text-slate-500 dark:text-slate-400">
-              <a href="#" className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors">{t('landing.privacy')}</a>
-              <a href="#" className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors">{t('landing.terms')}</a>
-              <a href="#" className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors">{t('landing.contact')}</a>
+            <div className="flex items-center gap-6 text-sm"
+              style={{ color: '#5c6068', fontFamily: "'DM Sans', sans-serif" }}
+            >
+              <a href="#" className="transition-colors"
+                style={{ color: '#5c6068' }}
+                onMouseEnter={e => e.currentTarget.style.color = '#c0c4cc'}
+                onMouseLeave={e => e.currentTarget.style.color = '#5c6068'}
+              >
+                {t('landing.privacy')}
+              </a>
+              <a href="#" className="transition-colors"
+                style={{ color: '#5c6068' }}
+                onMouseEnter={e => e.currentTarget.style.color = '#c0c4cc'}
+                onMouseLeave={e => e.currentTarget.style.color = '#5c6068'}
+              >
+                {t('landing.terms')}
+              </a>
+              <a href="#" className="transition-colors"
+                style={{ color: '#5c6068' }}
+                onMouseEnter={e => e.currentTarget.style.color = '#c0c4cc'}
+                onMouseLeave={e => e.currentTarget.style.color = '#5c6068'}
+              >
+                {t('landing.contact')}
+              </a>
             </div>
           </div>
         </div>

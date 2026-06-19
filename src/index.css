@@ -7,33 +7,33 @@
   --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-heading: 'Space Grotesk', sans-serif;
 
-  /* ===== Color Palette: "Deep Surgical Cyber" ===== */
+  /* ===== Color Palette: "Medical Red & Navy" ===== */
 
-  /* Cyan/Teal — Primary brand accent */
-  --color-cyan-50: #e6fffe;
-  --color-cyan-100: #b3fffd;
-  --color-cyan-200: #80fffc;
-  --color-cyan-300: #4dfffb;
-  --color-cyan-400: #1afff9;
-  --color-cyan-500: #00f2fe;
-  --color-cyan-600: #00c4d4;
-  --color-cyan-700: #0096a8;
-  --color-cyan-800: #006a7a;
-  --color-cyan-900: #00404d;
-  --color-cyan-950: #001a24;
+  /* Red — Primary brand accent */
+  --color-cyan-50: #fef2f2;
+  --color-cyan-100: #fee2e2;
+  --color-cyan-200: #fecaca;
+  --color-cyan-300: #fca5a5;
+  --color-cyan-400: #f87171;
+  --color-cyan-500: #ed1b24;
+  --color-cyan-600: #c9151d;
+  --color-cyan-700: #a51118;
+  --color-cyan-800: #810d12;
+  --color-cyan-900: #5c090d;
+  --color-cyan-950: #380507;
 
-  /* Electric Violet — Model confidence / secondary accent */
-  --color-violet-50: #f0ecff;
-  --color-violet-100: #d6caff;
-  --color-violet-200: #b8a3ff;
-  --color-violet-300: #9a7aff;
-  --color-violet-400: #7c52ff;
-  --color-violet-500: #6c2bd9;
-  --color-violet-600: #5a1fba;
-  --color-violet-700: #48159b;
-  --color-violet-800: #360c7a;
-  --color-violet-900: #240559;
-  --color-violet-950: #120238;
+  /* Navy Blue — Secondary / model confidence / brand depth */
+  --color-violet-50: #eef2f7;
+  --color-violet-100: #dce3f0;
+  --color-violet-200: #bcc8e1;
+  --color-violet-300: #8da0cc;
+  --color-violet-400: #5a77b5;
+  --color-violet-500: #385399;
+  --color-violet-600: #2a4580;
+  --color-violet-700: #23408e;
+  --color-violet-800: #1a346e;
+  --color-violet-900: #0f2448;
+  --color-violet-950: #091222;
 
   /* Navy/Obsidian — Deep backgrounds */
   --color-navy-50: #eef2fc;
@@ -54,34 +54,34 @@
   --color-glass-light: rgba(255, 255, 255, 0.7);
   --color-glass-border-light: rgba(203, 213, 225, 0.5);
 
-  /* Neon glow accents */
+  /* Accent colors */
   --color-amber-glow: #ff9f43;
   --color-rose-neon: #ff4d4d;
 
   /* Legacy color aliases for backward compatibility */
-  --color-surgai-50: #e6fffe;
-  --color-surgai-100: #b3fffd;
-  --color-surgai-200: #80fffc;
-  --color-surgai-300: #4dfffb;
-  --color-surgai-400: #1afff9;
-  --color-surgai-500: #00f2fe;
-  --color-surgai-600: #00c4d4;
-  --color-surgai-700: #0096a8;
-  --color-surgai-800: #006a7a;
-  --color-surgai-900: #00404d;
-  --color-surgai-950: #001a24;
+  --color-surgai-50: #fef2f2;
+  --color-surgai-100: #fee2e2;
+  --color-surgai-200: #fecaca;
+  --color-surgai-300: #fca5a5;
+  --color-surgai-400: #f87171;
+  --color-surgai-500: #ed1b24;
+  --color-surgai-600: #c9151d;
+  --color-surgai-700: #a51118;
+  --color-surgai-800: #810d12;
+  --color-surgai-900: #5c090d;
+  --color-surgai-950: #380507;
 
-  --color-teal-50: #f0ecff;
-  --color-teal-100: #d6caff;
-  --color-teal-200: #b8a3ff;
-  --color-teal-300: #9a7aff;
-  --color-teal-400: #7c52ff;
-  --color-teal-500: #6c2bd9;
-  --color-teal-600: #5a1fba;
-  --color-teal-700: #48159b;
-  --color-teal-800: #360c7a;
-  --color-teal-900: #240559;
-  --color-teal-950: #120238;
+  --color-teal-50: #eef2f7;
+  --color-teal-100: #dce3f0;
+  --color-teal-200: #bcc8e1;
+  --color-teal-300: #8da0cc;
+  --color-teal-400: #5a77b5;
+  --color-teal-500: #385399;
+  --color-teal-600: #2a4580;
+  --color-teal-700: #23408e;
+  --color-teal-800: #1a346e;
+  --color-teal-900: #0f2448;
+  --color-teal-950: #091222;
 }
 
 /* ===== Base Styles ===== */
@@ -95,7 +95,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #080b11;
+  background-color: #0b1124;
 }
 
 /* Radial gradient mesh — subtle depth */
@@ -106,9 +106,8 @@ body::before {
   pointer-events: none;
   z-index: 0;
   background:
-    radial-gradient(ellipse at 15% 25%, rgba(0, 242, 254, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 60%, rgba(108, 43, 217, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(255, 159, 67, 0.03) 0%, transparent 40%);
+    radial-gradient(ellipse at 15% 25%, rgba(237, 27, 36, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, rgba(35, 64, 142, 0.06) 0%, transparent 50%);
 }
 
 /* Light mode overrides */
@@ -118,8 +117,8 @@ body::before {
 
 :root:not(.dark) body::before {
   background:
-    radial-gradient(ellipse at 15% 25%, rgba(0, 242, 254, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 60%, rgba(108, 43, 217, 0.03) 0%, transparent 50%);
+    radial-gradient(ellipse at 15% 25%, rgba(237, 27, 36, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, rgba(35, 64, 142, 0.03) 0%, transparent 50%);
 }
 
 .font-heading {
@@ -147,7 +146,7 @@ body::before {
 }
 
 *:focus-visible {
-  outline: 2px solid var(--color-cyan-400);
+  outline: 2px solid var(--color-cyan-500);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -221,4 +220,11 @@ body::before {
 
 .animate-breathe {
   animation: breathe 2.5s ease-in-out infinite;
+}
+
+/* Landing page ECG heart-rate line draw */
+@keyframes ecg-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

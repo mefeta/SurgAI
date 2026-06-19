@@ -194,15 +194,15 @@ export function AnalyticsPage() {
                 <AreaChart data={accuracyData}>
                   <defs>
                     <linearGradient id="accuracyGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#00f2fe" stopOpacity={0.3} />
-                      <stop offset="95%" stopColor="#00f2fe" stopOpacity={0} />
+                      <stop offset="5%" stopColor="#ed1b24" stopOpacity={0.3} />
+                      <stop offset="95%" stopColor="#ed1b24" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="4 4" stroke="#1e293b" strokeOpacity={0.5} />
                   <XAxis dataKey="date" tick={{ fontSize: 11, fill: '#64748b' }} tickLine={false} axisLine={{ stroke: '#1e293b' }} />
                   <YAxis domain={[88, 96]} tick={{ fontSize: 11, fill: '#64748b' }} tickLine={false} axisLine={{ stroke: '#1e293b' }} />
                   <Tooltip content={<DarkTooltip />} />
-                  <Area type="monotone" dataKey="accuracy" stroke="#00f2fe" strokeWidth={2.5} fill="url(#accuracyGrad)" dot={{ fill: '#00f2fe', strokeWidth: 2, r: 3, stroke: '#080b11' }} activeDot={{ r: 5, fill: '#00f2fe', strokeWidth: 2, stroke: '#080b11' }} />
+                  <Area type="monotone" dataKey="accuracy" stroke="#ed1b24" strokeWidth={2.5} fill="url(#accuracyGrad)" dot={{ fill: '#ed1b24', strokeWidth: 2, r: 3, stroke: '#0b1124' }} activeDot={{ r: 5, fill: '#ed1b24', strokeWidth: 2, stroke: '#0b1124' }} />
                 </AreaChart>
               </ResponsiveContainer>
             ) : (
@@ -271,13 +271,13 @@ export function AnalyticsPage() {
                   <Tooltip content={<DarkTooltip />} />
                   <Scatter
                     data={predictedVsActualData}
-                    fill="#00f2fe"
+                    fill="#ed1b24"
                     shape={(props: any) => {
                       const { cx, cy } = props
                       return (
                         <g>
-                          <circle cx={cx} cy={cy} r={5} fill="#00f2fe" opacity={0.6} />
-                          <circle cx={cx} cy={cy} r={3} fill="#00f2fe" />
+                          <circle cx={cx} cy={cy} r={5} fill="#ed1b24" opacity={0.4} />
+                          <circle cx={cx} cy={cy} r={3} fill="#ed1b24" />
                         </g>
                       )
                     }}

@@ -8,7 +8,7 @@ import { Modal } from '@/components/ui/Modal'
 import { formatDuration, formatDateWithLocale, getRiskColor } from '@/lib/utils'
 import { useAuth } from '@/context/AuthContext'
 import { useLocale } from '@/context/LocaleContext'
-import { getScheduleByDay, getScheduleByWeek, getSchedule, createSchedule, deleteSchedule } from '@/api/schedule'
+import { getScheduleByDay, getScheduleByWeek, getSchedule, createSchedule, deleteSchedule, updateSchedule } from '@/api/schedule'
 import type { ScheduleResponse } from '@/api/schedule'
 import {
   ChevronLeft,
@@ -90,6 +90,7 @@ export function SchedulePage() {
   const [addingSchedule, setAddingSchedule] = useState(false)
   const [deleteConfirmId, setDeleteConfirmId] = useState<number | null>(null)
   const [deletingId, setDeletingId] = useState<number | null>(null)
+  const [updatingStatusId, setUpdatingStatusId] = useState<number | null>(null)
   const [newSurgery, setNewSurgery] = useState({
     scheduled_date: formatDateStr(new Date()),
     start_time: '08:00',
@@ -164,6 +165,18 @@ export function SchedulePage() {
       setError(err instanceof Error ? err.message : t('schedule.failedDelete'))
     } finally {
       setDeletingId(null)
+    }
+  }
+
+  const handleStatusChange = async (id: number, newStatus: string) => {
+    setUpdatingStatusId(id)
+    try {
+      await updateSchedule(id, { schedule_status: newStatus })
+      fetchData()
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to update status')
+    } finally {
+      setUpdatingStatusId(null)
     }
   }
 
@@ -304,10 +317,27 @@ export function SchedulePage() {
                         <div className="space-y-1">
                           <div className="flex items-center gap-2">
                             <span className="font-medium text-sm text-slate-900 dark:text-white">{op.case_id ?? `#${op.id}`}</span>
-                            <Badge variant={
-                              op.schedule_status === 'Delayed' ? 'warning' :
-                              op.schedule_status === 'scheduled' || op.schedule_status === 'Scheduled' ? 'info' : 'default'
-                            } size="sm">{op.schedule_status}</Badge>
+                            <div className="relative group">
+                              <select
+                                value={op.schedule_status}
+                                onChange={(e) => handleStatusChange(op.id, e.target.value)}
+                                disabled={updatingStatusId === op.id}
+                                className={`text-xs font-medium rounded-md border px-2 py-0.5 pr-6 cursor-pointer appearance-none transition-colors ${
+                                  op.schedule_status === 'Delayed' ? 'bg-amber-500/10 text-amber-400 border-amber-500/30' :
+                                  op.schedule_status === 'completed' || op.schedule_status === 'Completed' ? 'bg-teal-500/10 text-teal-400 border-teal-500/30' :
+                                  op.schedule_status === 'cancelled' || op.schedule_status === 'Cancelled' ? 'bg-rose-500/10 text-rose-400 border-rose-500/30' :
+                                  'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
+                                }`}
+                              >
+                                <option value="scheduled" className="bg-slate-800 text-slate-200">Scheduled</option>
+                                <option value="completed" className="bg-slate-800 text-slate-200">Completed</option>
+                                <option value="delayed" className="bg-slate-800 text-slate-200">Delayed</option>
+                                <option value="cancelled" className="bg-slate-800 text-slate-200">Cancelled</option>
+                              </select>
+                              {updatingStatusId === op.id && (
+                                <Loader2 className="w-3 h-3 animate-spin text-slate-400 absolute right-1.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                              )}
+                            </div>
                           </div>
                           <p className="text-sm text-slate-600 dark:text-slate-400">{op.operation_type}</p>
                           <div className="flex items-center gap-4 text-xs text-slate-500">

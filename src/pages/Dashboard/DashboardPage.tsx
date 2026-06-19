@@ -162,8 +162,8 @@ export function DashboardPage() {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           <div className="flex items-start gap-4">
             <div className="relative mt-1">
-              <div className="w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_10px_#00f2fe]" />
-              <div className="absolute inset-0 w-3 h-3 rounded-full bg-cyan-400 animate-pulse-glow" />
+              <div className="w-3 h-3 rounded-full bg-cyan-500 shadow-[0_0_10px_#ed1b24]" />
+              <div className="absolute inset-0 w-3 h-3 rounded-full bg-cyan-500 animate-pulse-glow" />
             </div>
             <div className="space-y-2">
               <h2 className="text-xl lg:text-2xl font-bold text-white dark:text-white not-dark:text-slate-900 font-heading">
@@ -253,20 +253,20 @@ export function DashboardPage() {
                 <AreaChart data={barChartData}>
                   <defs>
                     <linearGradient id="predictedGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#00f2fe" stopOpacity={0.3} />
-                      <stop offset="95%" stopColor="#00f2fe" stopOpacity={0} />
+                      <stop offset="5%" stopColor="#ed1b24" stopOpacity={0.3} />
+                      <stop offset="95%" stopColor="#ed1b24" stopOpacity={0} />
                     </linearGradient>
                     <linearGradient id="actualGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#7c52ff" stopOpacity={0.3} />
-                      <stop offset="95%" stopColor="#7c52ff" stopOpacity={0} />
+                      <stop offset="5%" stopColor="#385399" stopOpacity={0.3} />
+                      <stop offset="95%" stopColor="#385399" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="4 4" stroke="#1e293b" strokeOpacity={0.5} />
                   <XAxis dataKey="name" tick={{ fontSize: 11, fill: '#64748b' }} tickLine={false} axisLine={{ stroke: '#1e293b' }} />
                   <YAxis tick={{ fontSize: 11, fill: '#64748b' }} tickLine={false} axisLine={{ stroke: '#1e293b' }} />
                   <Tooltip content={<DarkTooltip />} />
-                  <Area type="monotone" dataKey="predicted" name={t('dashboard.predicted')} stroke="#00f2fe" strokeWidth={2.5} fill="url(#predictedGrad)" dot={{ fill: '#00f2fe', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#00f2fe', strokeWidth: 2, stroke: '#080b11' }} />
-                  <Area type="monotone" dataKey="actual" name={t('dashboard.actual')} stroke="#7c52ff" strokeWidth={2.5} fill="url(#actualGrad)" dot={{ fill: '#7c52ff', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#7c52ff', strokeWidth: 2, stroke: '#080b11' }} />
+                  <Area type="monotone" dataKey="predicted" name={t('dashboard.predicted')} stroke="#ed1b24" strokeWidth={2.5} fill="url(#predictedGrad)" dot={{ fill: '#ed1b24', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#ed1b24', strokeWidth: 2, stroke: '#0b1124' }} />
+                  <Area type="monotone" dataKey="actual" name={t('dashboard.actual')} stroke="#385399" strokeWidth={2.5} fill="url(#actualGrad)" dot={{ fill: '#385399', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#385399', strokeWidth: 2, stroke: '#0b1124' }} />
                 </AreaChart>
               </ResponsiveContainer>
             ) : (

@@ -32,7 +32,7 @@ export function Navbar({ darkMode, onToggleDark }: NavbarProps) {
   }
 
   return (
-    <header className="sticky top-0 z-30 backdrop-blur-xl bg-[#080b11]/70 dark:bg-[#080b11]/70 not-dark:bg-white/70 border-b border-slate-800/50 dark:border-slate-800/50 not-dark:border-slate-200/50">
+    <header className="sticky top-0 z-30 backdrop-blur-xl bg-[#0b1124]/70 dark:bg-[#0b1124]/70 not-dark:bg-white/70 border-b border-slate-800/50 dark:border-slate-800/50 not-dark:border-slate-200/50">
       <div className="flex items-center justify-between h-16 px-4 lg:px-6">
         <div className="flex items-center gap-4">
           {/* SurgAI Logo */}
@@ -83,7 +83,7 @@ export function Navbar({ darkMode, onToggleDark }: NavbarProps) {
 
           <button className="relative p-2 rounded-lg hover:bg-slate-800/50 dark:hover:bg-slate-800/50 not-dark:hover:bg-slate-100/80 transition-colors" aria-label={t('navbar.notifications')}>
             <Bell className="w-5 h-5 text-slate-400" />
-            <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full border-2 border-[#080b11] dark:border-[#080b11] not-dark:border-[#f4f7f6]" />
+            <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full border-2 border-[#0b1124] dark:border-[#0b1124] not-dark:border-[#f4f7f6]" />
           </button>
 
           <div className="relative">
